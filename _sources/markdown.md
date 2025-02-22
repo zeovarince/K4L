@@ -28,7 +28,7 @@ persamaan linear yang memiliki dua varibel, dengan pangkat satu.
                         -12+y  = 12
                             y  = 12 + 12
                             y  = 24
-    Jadi nilai variabel x,y adalah : (-6,24)
+        Jadi nilai variabel x,y adalah : (-6,24)
 ​
  
 
