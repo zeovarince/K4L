@@ -1,11 +1,26 @@
-# Definisi Sistem Persamaan Linear
+# Sistem Persamaan Linear
 
 Sistem persamaan linear merupakan salah satu topik yang penting dalam matematika. Sistem ini terdiri dari beberapa persamaan linear yang harus diselesaikan secara bersamaan. Persamaan linear sendiri merupakan persamaan yang memiliki bentuk umum seperti ax + by = c, di mana a, b, dan c adalah konstanta yang diketahui, sedangkan x dan y adalah variabel yang harus dicari.
 
 Dalam sistem persamaan linear, terdapat dua jenis sistem yaitu sistem persamaan linear dengan dua variabel dan sistem persamaan linear dengan tiga variabel. Sistem persamaan linear dengan dua variabel memiliki dua persamaan dengan dua variabel yang harus dicari nilainya. Sedangkan sistem persamaan linear dengan tiga variabel memiliki tiga persamaan dengan tiga variabel yang harus dicari nilainya
 
+### 1. Persamaan Linear Satu variabel
+persamaan linear yang hanya memiliki satu variabel saja memiliki pangkat satu.
+*         Contoh: 2x-9=1
+          Penyelesaian: 2x−9=1
+                          2x  = 1+9
+                           x  = 10/2
+                           x  = 5
+
+### 2. Persamaan Linear Dua variabel 
+persamaan linear yang memiliki dua varibel, dengan pangkat satu.
+*         Contoh: 
+### 3. Persamaan Linear Tiga variabel
+persamaan linear yang memiliki tiga varibel yang saling berhubungan.
+contoh:
+
 ## Solusi Sistem Persamaan Linear 
-## Sample Roles and Directives
+## 
 
 Roles and directives are two of the most powerful tools in Jupyter Book. They
 are like functions, but written in a markup language. They both
