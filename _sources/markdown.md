@@ -30,7 +30,7 @@ persamaan linear yang memiliki dua varibel, dengan pangkat satu.
                             -y= -8
                              y= 8
 
-            Jadi nilai variabel x,y adalah : (-6,24)
+            Jadi nilai variabel x,y adalah : (2,8)
 ​
  
 
