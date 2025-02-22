@@ -28,13 +28,58 @@ persamaan linear yang memiliki dua varibel, dengan pangkat satu.
                         -12+y  = 12
                             y  = 12 + 12
                             y  = 24
-        Jadi nilai variabel x,y adalah : (-6,24)
+
+            Jadi nilai variabel x,y adalah : (-6,24)
 ​
  
 
 ### D. Persamaan Linear Tiga variabel
 persamaan linear yang memiliki tiga varibel yang saling berhubungan.
-contoh:
+*           Contoh: 2x+y+z= 5
+                    x-2y+3z= 4
+                    3x−y+2z= 12
+            Penyelesaian: Mengeliminasi Z dengan menggunakan persamaan 1 dan 2
+                    2x+y+z= 5 | (3)
+                    x-2y+3z= 4 | (1)
+                    Karna kita ingin mengeliminasi variabel Z kita harus menyamakan nilai dari variabel Z nya
+
+                    6x+3y-3z= 15
+                    x-2y+3z= 4
+                    ____________+
+                    7x+y   = 19   (persamaan ke 4)
+                    Selanjutnya kita mengeleminasi Z pada persamaan 1 dan 3
+
+                    2x+y+z= 5  | (2)                
+                    3x−y+2z= 12| (1)
+                    Menyamakan nilai dari variabel Z
+
+                    4x+2y+2z= 10
+                    3x-y+2z= 12
+                    _____________+
+                    7x+3y  = 22  (Persamaan ke 5)
+                    kita telah mendapatkan 2 persamaan 2 variabel, langkah selanjutnya mengeliminasi salah 1 variabel dari 2 persamaan yang di dapat
+
+                    7x+y= 19
+                    7x+3y= 22
+                    ___________-
+                      -2y= -3
+                        y= -3/-2 = 3/2 
+                    Selanjutnya kita subtitusi nilai y ke persamaan ke 4
+
+                    7x+3/2= 19
+                    7x    = 19-3/2
+                    7x    = 38/2 - 3/2
+                    x     = 35/2 * 1/7
+                    x     = 35/14
+                    x      = 5/2
+                    Setelah mendapat kan nilai X dan Y kita subtitusi kan nilai X dan Y dengan persamaan ke 1
+
+                    2(5/2)+3/2-z = 5
+                    5+3/2-z      = 5
+                         -z      = 5-5-3/2
+                         -z      = -3/2
+                          z      = 3/2
+      Jadi nilai dari variabel X,Y,Z adalah (5/2, 3/2, 3/2)
 
 ### E. Macam-Macam Solusi Sistem Persamaan Linear
 ####
