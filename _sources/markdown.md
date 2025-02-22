@@ -95,6 +95,10 @@ Contoh:
 
 #### 2. Solusi Tak Hingga
 Solusi tak hingga terjadi jika persamaan-persamaan dalam sistem tersebut berkaitan atau tidak independen satu sama lain. Dalam hal ini, kedua persamaan menggambarkan garis atau bidang yang sama. Jadi, alih-alih berpotongan di satu titik, keduanya saling tumpang tindih, yang menghasilkan banyak titik perpotongan, atau dengan kata lain, tak hingga solusi.
-Contoh
+Contoh: 
 <iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
+#### 3. Tidak Ada Solusi
+Tidak ada solusi terjadi jika sistem persamaan tersebut konsisten dan saling bertentangan, atau dengan kata lain, ketika persamaan-persaamaan tersebut menggambarkan garis-garis atau bidang-bidang yang paralel satu sama lain.
+Contoh: 
+<iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
