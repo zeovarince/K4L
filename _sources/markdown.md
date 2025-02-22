@@ -88,38 +88,13 @@ persamaan linear yang memiliki tiga varibel yang saling berhubungan.
       Jadi nilai dari variabel X,Y,Z adalah (5/2, 3/2, 3/2)
 
 ### E. Macam-Macam Solusi Sistem Persamaan Linear
-#### 1.  Satu solusi 
+#### 1.  Satu Solusi 
 Satu solusi adalah ketika 2 garis berpotongan pada 1 titik
 Contoh: 
 <iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
-Here is a "note" directive:
+#### 2. Solusi Tak Hingga
+Solusi tak hingga terjadi jika persamaan-persamaan dalam sistem tersebut berkaitan atau tidak independen satu sama lain. Dalam hal ini, kedua persamaan menggambarkan garis atau bidang yang sama. Jadi, alih-alih berpotongan di satu titik, keduanya saling tumpang tindih, yang menghasilkan banyak titik perpotongan, atau dengan kata lain, tak hingga solusi.
+Contoh
+<iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
-```{note}
-Here is a note
-```
-
-It will be rendered in a special box when you build your book.
-
-Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
-
-
-## Citations
-
-You can also cite references that are stored in a `bibtex` file. For example,
-the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
-this: {cite}`holdgraf_evidence_2014`.
-
-Moreover, you can insert a bibliography into your page with this syntax:
-The `{bibliography}` directive must be used for all the `{cite}` roles to
-render properly.
-For example, if the references for your book are stored in `references.bib`,
-then the bibliography is inserted with:
-
-```{bibliography}
-```
-
-## Learn more
-
-This is just a simple starter to get you started.
-You can learn a lot more at [jupyterbook.org](https://jupyterbook.org).
