@@ -1,11 +1,10 @@
-# Markdown Files
+# Definisi Sistem Persamaan Linear
 
-PEH TUTOR NGISI MATERI PIYE CAK your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
-This is a simple file to help you get started and show off some syntax.
+Sistem persamaan linear merupakan salah satu topik yang penting dalam matematika. Sistem ini terdiri dari beberapa persamaan linear yang harus diselesaikan secara bersamaan. Persamaan linear sendiri merupakan persamaan yang memiliki bentuk umum seperti ax + by = c, di mana a, b, dan c adalah konstanta yang diketahui, sedangkan x dan y adalah variabel yang harus dicari.
 
-## What is MyST?
+Dalam sistem persamaan linear, terdapat dua jenis sistem yaitu sistem persamaan linear dengan dua variabel dan sistem persamaan linear dengan tiga variabel. Sistem persamaan linear dengan dua variabel memiliki dua persamaan dengan dua variabel yang harus dicari nilainya. Sedangkan sistem persamaan linear dengan tiga variabel memiliki tiga persamaan dengan tiga variabel yang harus dicari nilainya
+
+## 
 
 MyST stands for "Markedly Structured Text". It
 is a slight variation on a flavor of markdown called "CommonMark" markdown,
