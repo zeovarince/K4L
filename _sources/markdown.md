@@ -42,7 +42,8 @@ persamaan linear yang memiliki tiga varibel yang saling berhubungan.
 
                     2x+y+z= 5 | (3)
                     x-2y+3z= 4 | (1)
-                    Karna kita ingin mengeliminasi variabel Z kita harus menyamakan nilai dari variabel Z nya
+                    Karna kita ingin mengeliminasi variabel Z kita harus menyamakan 
+                    nilai dari variabel Z nya
 
                     6x+3y-3z= 15
                     x-2y+3z= 4
@@ -59,7 +60,8 @@ persamaan linear yang memiliki tiga varibel yang saling berhubungan.
                     _____________+
                     7x+3y  = 22  (Persamaan ke 5)
                     Kita telah mendapatkan 2 persamaan 2 variabel
-                    Langkah selanjutnya mengeliminasi salah 1 variabel dari 2 persamaan yang di dapat
+                    Langkah selanjutnya mengeliminasi salah 1 variabel dari 2 
+                    persamaan yang di dapat
 
                     7x+y= 19
                     7x+3y= 22
