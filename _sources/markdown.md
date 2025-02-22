@@ -91,7 +91,7 @@ persamaan linear yang memiliki tiga varibel yang saling berhubungan.
 #### 1.  Satu solusi 
 Satu solusi adalah ketika 2 garis berpotongan pada 1 titik
 Contoh: 
-<iframe scrolling="no" title="sistem persamaan linear dua variabel" src="https://www.geogebra.org/material/iframe/id/wM9HWkFq/width/1382/height/614/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1382px" height="614px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
 Here is a "note" directive:
 
