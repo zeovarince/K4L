@@ -4,15 +4,7 @@ Sistem persamaan linear merupakan salah satu topik yang penting dalam matematika
 
 Dalam sistem persamaan linear, terdapat dua jenis sistem yaitu sistem persamaan linear dengan dua variabel dan sistem persamaan linear dengan tiga variabel. Sistem persamaan linear dengan dua variabel memiliki dua persamaan dengan dua variabel yang harus dicari nilainya. Sedangkan sistem persamaan linear dengan tiga variabel memiliki tiga persamaan dengan tiga variabel yang harus dicari nilainya
 
-## 
-
-MyST stands for "Markedly Structured Text". It
-is a slight variation on a flavor of markdown called "CommonMark" markdown,
-with small syntax extensions to allow you to write **roles** and **directives**
-in the Sphinx ecosystem.
-
-For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
-
+## Solusi Sistem Persamaan Linear 
 ## Sample Roles and Directives
 
 Roles and directives are two of the most powerful tools in Jupyter Book. They
