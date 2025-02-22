@@ -88,16 +88,10 @@ persamaan linear yang memiliki tiga varibel yang saling berhubungan.
       Jadi nilai dari variabel X,Y,Z adalah (5/2, 3/2, 3/2)
 
 ### E. Macam-Macam Solusi Sistem Persamaan Linear
-####
-
-Roles and directives are two of the most powerful tools in Jupyter Book. They
-are like functions, but written in a markup language. They both
-serve a similar purpose, but **roles are written in one line**, whereas
-**directives span many lines**. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.
-
-<iframe scrolling="no" title="Linear Function Transformations" src="https://www.geogebra.org/material/iframe/id/gtnyzzxz/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
+#### 1.  Satu solusi 
+Satu solusi adalah ketika 2 garis berpotongan pada 1 titik
+Contoh: 
+<iframe scrolling="no" title="sistem persamaan linear dua variabel" src="https://www.geogebra.org/material/iframe/id/wM9HWkFq/width/1382/height/614/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1382px" height="614px" style="border:0px;"> </iframe>
 
 Here is a "note" directive:
 
