@@ -97,6 +97,8 @@ serve a similar purpose, but **roles are written in one line**, whereas
 and what they do with those inputs depends on the specific role or directive
 that is being called.
 
+<iframe scrolling="no" title="Linear Function Transformations" src="https://www.geogebra.org/material/iframe/id/gtnyzzxz/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
+
 Here is a "note" directive:
 
 ```{note}
