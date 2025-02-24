@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Next Materi &#8212; Komputasi Aljabar Linear</title>
+    <title>Penyelesaian sistem persamaan linear &#8212; Komputasi Aljabar Linear</title>
   
   
   
@@ -172,7 +172,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Sistem Persamaan Linear</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Next Materi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Penyelesaian sistem persamaan linear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Next Materi</a></li>
 </ul>
 
@@ -343,7 +343,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -354,11 +356,27 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Next Materi</h1>
+    <h1>Penyelesaian sistem persamaan linear</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi baris elementer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris-pertama">Langkah 1: Eliminasi Baris Pertama</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-eliminasi-baris-kedua">Langkah 2: Eliminasi Baris Kedua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-normalisasi-baris-ketiga">Langkah 3: Normalisasi Baris Ketiga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-eliminasi-kolom-ketiga">Langkah 4: Eliminasi Kolom Ketiga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-normalisasi-baris-kedua">Langkah 5: Normalisasi Baris Kedua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-eliminasi-kolom-kedua">Langkah 6: Eliminasi Kolom Kedua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi">Solusi</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -368,130 +386,244 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="next-materi">
-<h1>Next Materi<a class="headerlink" href="#next-materi" title="Link to this heading">#</a></h1>
-<p>{
-“cells”: [
-{
-“cell_type”: “markdown”,
-“metadata”: {},
-“source”: [
-“# Content with notebooks\n”,
-“\n”,
-“You can also create content with Jupyter Notebooks. This means that you can include\n”,
-“code blocks and their outputs in your book.\n”,
-“\n”,
-“## Markdown + notebooks\n”,
-“\n”,
-“As it is markdown, you can embed images, HTML, etc into your posts!\n”,
-“\n”,
-“<img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" />\n”,
-“\n”,
-“You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and\n”,
-“\n”,
-“$<span class="math notranslate nohighlight">\(\n&quot;,
-    &quot;math^{blocks}\n&quot;,
-    &quot;\)</span><span class="math notranslate nohighlight">\(\n&quot;,
-    &quot;\n&quot;,
-    &quot;or\n&quot;,
-    &quot;\n&quot;,
-    &quot;\)</span><span class="math notranslate nohighlight">\(\n&quot;,
-    &quot;\\begin{aligned}\n&quot;,
-    &quot;\\mbox{mean} la_{tex} \\\\ \\\\\n&quot;,
-    &quot;math blocks\n&quot;,
-    &quot;\\end{aligned}\n&quot;,
-    &quot;\)</span><span class="math notranslate nohighlight">\(\n&quot;,
-    &quot;\n&quot;,
-    &quot;But make sure you \\\)</span>Escape \<span class="math notranslate nohighlight">\(your \\\)</span>dollar signs \$you want to keep!\n”,
-“\n”,
-“## MyST markdown\n”,
-“\n”,
-“MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check\n”,
-“out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,\n”,
-“or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.\n”,
-“\n”,
-“## Code blocks and outputs\n”,
-“\n”,
-“Jupyter Book will also embed your code blocks and output in your book.\n”,
-“For example, here’s some sample Matplotlib code:”
-]
-},
-{
-“cell_type”: “code”,
-“execution_count”: null,
-“metadata”: {},
-“outputs”: [],
-“source”: [
-“from matplotlib import rcParams, cycler\n”,
-“import matplotlib.pyplot as plt\n”,
-“import numpy as np\n”,
-“plt.ion()”
-]
-},
-{
-“cell_type”: “code”,
-“execution_count”: null,
-“metadata”: {},
-“outputs”: [],
-“source”: [
-“# Fixing random state for reproducibility\n”,
-“np.random.seed(19680801)\n”,
-“\n”,
-“N = 10\n”,
-“data = [np.logspace(0, 1, 100) + np.random.randn(100) + ii for ii in range(N)]\n”,
-“data = np.array(data).T\n”,
-“cmap = plt.cm.coolwarm\n”,
-“rcParams[‘axes.prop_cycle’] = cycler(color=cmap(np.linspace(0, 1, N)))\n”,
-“\n”,
-“\n”,
-“from matplotlib.lines import Line2D\n”,
-“custom_lines = [Line2D([0], [0], color=cmap(0.), lw=4),\n”,
-“                Line2D([0], [0], color=cmap(.5), lw=4),\n”,
-“                Line2D([0], [0], color=cmap(1.), lw=4)]\n”,
-“\n”,
-“fig, ax = plt.subplots(figsize=(10, 5))\n”,
-“lines = ax.plot(data)\n”,
-“ax.legend(custom_lines, [‘Cold’, ‘Medium’, ‘Hot’]);”
-]
-},
-{
-“cell_type”: “markdown”,
-“metadata”: {},
-“source”: [
-“There is a lot more that you can do with outputs (such as including interactive outputs)\n”,
-“with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a>”
-]
-}
-],
-“metadata”: {
-“kernelspec”: {
-“display_name”: “Python 3”,
-“language”: “python”,
-“name”: “python3”
-},
-“language_info”: {
-“codemirror_mode”: {
-“name”: “ipython”,
-“version”: 3
-},
-“file_extension”: “.py”,
-“mimetype”: “text/x-python”,
-“name”: “python”,
-“nbconvert_exporter”: “python”,
-“pygments_lexer”: “ipython3”,
-“version”: “3.8.0”
-},
-“widgets”: {
-“application/vnd.jupyter.widget-state+json”: {
-“state”: {},
-“version_major”: 2,
-“version_minor”: 0
-}
-}
-},
-“nbformat”: 4,
-“nbformat_minor”: 4
-}</p>
+  <section id="penyelesaian-sistem-persamaan-linear">
+<h1>Penyelesaian sistem persamaan linear<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h1>
+<section id="operasi-baris-elementer">
+<h2>Operasi baris elementer<a class="headerlink" href="#operasi-baris-elementer" title="Link to this heading">#</a></h2>
+</section>
+<section id="eliminasi-gauss">
+<h2>Eliminasi gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h2>
+<p>Contoh soal:
+Selesaikan dengan menggunakan Eliminasi Gauss</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li></li>
+</ol>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1+2x_2+3x_3=6\\
+2x_1+4x_2+6x_3=12\\
+x_3+x_2=2\\
+\end{array}
+\end{split}\]</div>
+<p>Penyelesaian:
+\begin{aligned}
+x_1 + 2x_2 + 3x_3 &amp;= 6 \
+2x_1 + 4x_2 + 6x_3 &amp;= 12 \
+x_3 - x_2 &amp;= 2
+\end{aligned}</p>
+<p>Matriks augmented:</p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | 6 \
+2 &amp; 4 &amp; 6 &amp; | 12 \
+0 &amp; -1 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Baris kedua dikurangi 2 kali baris pertama:</p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | 6 \
+0 &amp; 0 &amp; 0 &amp; | 0 \
+0 &amp; -1 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga.
+Variabel bebas: , maka</p>
+<p>x_2 = t - 2, \quad x_1 = -2x_2 - 3x_3 + 6 = -2(t-2) - 3t + 6 = -5t + 10.</p>
+<p>\begin{aligned}
+x_1 &amp;= -5t + 10, \
+x_2 &amp;= t - 2, \
+x_3 &amp;= t, \quad t \in \mathbb{R}.
+\end{aligned}</p>
+<hr class="docutils" />
+<ul class="simple">
+<li><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1+x_2+x_3=3\\
+2x_1+x_3=5\\
+x_1+2x_2=3\\
+\end{array}
+\end{split}\]</div>
+<p>Penyelesaian :</p>
+<ul class="simple">
+<li><p>\begin{array}{ccc|c}
+1 &amp; 1 &amp; 1 &amp; 3 \
+2 &amp; 0 &amp; 1 &amp; 5 \
+1 &amp; 2 &amp; 0 &amp; 3
+\end{array}</p></li>
+</ul>
+</section>
+<section id="langkah-1-eliminasi-baris-pertama">
+<h2>Langkah 1: Eliminasi Baris Pertama<a class="headerlink" href="#langkah-1-eliminasi-baris-pertama" title="Link to this heading">#</a></h2>
+<p>Kita akan mengeliminasi elemen di bawah elemen pertama pada kolom pertama dengan mengurangi baris kedua dengan 2 kali baris pertama dan mengurangi baris ketiga dengan baris pertama.</p>
+<ul class="simple">
+<li><p>Baris 2 → Baris 2 - 2 × Baris 1</p></li>
+<li><p>Baris 3 → Baris 3 - Baris 1</p></li>
+</ul>
+<p>Maka hasilnya adalah:</p>
+<p>\begin{array}{ccc|c}
+1 &amp; 1 &amp; 1 &amp; 3 \
+0 &amp; -2 &amp; -1 &amp; -1 \
+0 &amp; 1 &amp; -1 &amp; 0
+\end{array}</p>
+</section>
+<section id="langkah-2-eliminasi-baris-kedua">
+<h2>Langkah 2: Eliminasi Baris Kedua<a class="headerlink" href="#langkah-2-eliminasi-baris-kedua" title="Link to this heading">#</a></h2>
+<p>Sekarang kita akan mengeliminasi elemen di bawah elemen kedua pada kolom kedua dengan menambah baris ketiga dengan setengah baris kedua.</p>
+<ul class="simple">
+<li><p>Baris 3 → Baris 3 + 1/2 dikali baris 2</p></li>
+</ul>
+<p>Hasilnya adalah:</p>
+<p>\begin{array}{ccc|c}
+1 &amp; 1 &amp; 1 &amp; 3 \
+0 &amp; -2 &amp; -1 &amp; -1 \
+0 &amp; 0 &amp; -\frac{3}{2} &amp; -\frac{1}{2}
+\end{array}</p>
+</section>
+<section id="langkah-3-normalisasi-baris-ketiga">
+<h2>Langkah 3: Normalisasi Baris Ketiga<a class="headerlink" href="#langkah-3-normalisasi-baris-ketiga" title="Link to this heading">#</a></h2>
+<p>Kita akan mengalikan baris ketiga dengan (-\frac{2}{3}) untuk menjadikan elemen di baris ketiga, kolom ketiga menjadi 1:</p>
+<ul class="simple">
+<li><p>Baris 3 → -2/3 dikali baris 3</p></li>
+</ul>
+<p>Hasilnya menjadi:</p>
+<p>\begin{array}{ccc|c}
+1 &amp; 1 &amp; 1 &amp; 3 \
+0 &amp; -2 &amp; -1 &amp; -1 \
+0 &amp; 0 &amp; 1 &amp; \frac{1}{3}
+\end{array}</p>
+</section>
+<section id="langkah-4-eliminasi-kolom-ketiga">
+<h2>Langkah 4: Eliminasi Kolom Ketiga<a class="headerlink" href="#langkah-4-eliminasi-kolom-ketiga" title="Link to this heading">#</a></h2>
+<p>Sekarang kita akan mengeliminasi elemen-elemen di atas kolom ketiga.</p>
+<ul class="simple">
+<li><p>Baris 1 → Baris 1 - Baris 3</p></li>
+<li><p>Baris 2 → Baris 2 + Baris 3</p></li>
+</ul>
+<p>Maka hasilnya adalah:</p>
+<p>\begin{array}{ccc|c}
+1 &amp; 1 &amp; 0 &amp; \frac{8}{3} \
+0 &amp; -2 &amp; 0 &amp; -\frac{2}{3} \
+0 &amp; 0 &amp; 1 &amp; \frac{1}{3}
+\end{array}</p>
+</section>
+<section id="langkah-5-normalisasi-baris-kedua">
+<h2>Langkah 5: Normalisasi Baris Kedua<a class="headerlink" href="#langkah-5-normalisasi-baris-kedua" title="Link to this heading">#</a></h2>
+<p>Kita akan mengalikan baris kedua dengan (-\frac{1}{2}) untuk menjadikan elemen di baris kedua, kolom kedua menjadi 1:</p>
+<ul class="simple">
+<li><p>Baris 2 → (-\frac{1}{2} \times \text{Baris 2})</p></li>
+</ul>
+<p>Hasilnya menjadi:</p>
+<p>\begin{array}{ccc|c}
+1 &amp; 1 &amp; 0 &amp; \frac{8}{3} \
+0 &amp; 1 &amp; 0 &amp; \frac{1}{3} \
+0 &amp; 0 &amp; 1 &amp; \frac{1}{3}
+\end{array}</p>
+</section>
+<section id="langkah-6-eliminasi-kolom-kedua">
+<h2>Langkah 6: Eliminasi Kolom Kedua<a class="headerlink" href="#langkah-6-eliminasi-kolom-kedua" title="Link to this heading">#</a></h2>
+<p>Sekarang kita akan mengeliminasi elemen di atas kolom kedua.</p>
+<ul class="simple">
+<li><p>Baris 1 → Baris 1 - Baris 2</p></li>
+</ul>
+<p>Hasil akhirnya menjadi:</p>
+<p>\begin{array}{ccc|c}
+1 &amp; 0 &amp; 0 &amp; \frac{7}{3} \
+0 &amp; 1 &amp; 0 &amp; \frac{1}{3} \
+0 &amp; 0 &amp; 1 &amp; \frac{1}{3}
+\end{array}</p>
+</section>
+<section id="solusi">
+<h2>Solusi<a class="headerlink" href="#solusi" title="Link to this heading">#</a></h2>
+<p>Solusi akhir dari persamaan diatas adalah:
+$<span class="math notranslate nohighlight">\(
+\begin{array}{cc}
+x_1=\frac{7}{3} \\
+x_2=\frac{1}{3} \\
+x_3=\frac{1}{3}
+\end{array}
+\)</span>$</p>
+<ul class="simple">
+<li><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+2x_1+2x_2=4\\
+x_1+x_2=2
+\end{array}
+\end{split}\]</div>
+<p>Penyelesaian :
+\begin{aligned}
+2x_1 + 2x_2 &amp;= Y \
+x_1 + x_2 &amp;= 2
+\end{aligned}</p>
+<p>Matriks augmented:</p>
+<p>\begin{bmatrix}
+2 &amp; 2 &amp; | Y \
+1 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Eliminasi dengan membagi baris pertama dengan 2:</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; | \frac{Y}{2} \
+1 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Kurangi baris kedua dengan baris pertama:</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; | \frac{Y}{2} \
+0 &amp; 0 &amp; | 2 - \frac{Y}{2}
+\end{bmatrix}</p>
+<ul class="simple">
+<li><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1+x_2=5\\
+x_1+2x_3=6
+\end{array}
+\end{split}\]</div>
+<p>Penyelesaian:
+\begin{aligned}
+x_1 + x_2 &amp;= 5 \
+x_1 + 2x_3 &amp;= 6
+\end{aligned}</p>
+<p>Matriks augmented:</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | 5 \
+1 &amp; 0 &amp; 2 &amp; | 6
+\end{bmatrix}</p>
+<p>Eliminasi dengan mengurangi baris kedua dengan baris pertama:</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | 5 \
+0 &amp; -1 &amp; 2 &amp; | 1
+\end{bmatrix}</p>
+<p>Dari baris kedua:
+$$</p>
+<ul class="simple">
+<li><p>x_2 + 2x_3 = 1 \Rightarrow x_2 = 2x_3 - 1.</p></li>
+</ul>
+<p>x_1 + (2x_3 - 1) = 5 \Rightarrow x_1 = 6 - 2x_3.
+$$
+Solusi umum:</p>
+<p>\begin{aligned}
+x_1 &amp;= 6 - 2t, \
+x_2 &amp;= 2t - 1, \
+x_3 &amp;= t, \quad t \in \mathbb{R}.
+\end{aligned}</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -548,6 +680,30 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi baris elementer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris-pertama">Langkah 1: Eliminasi Baris Pertama</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-eliminasi-baris-kedua">Langkah 2: Eliminasi Baris Kedua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-normalisasi-baris-ketiga">Langkah 3: Normalisasi Baris Ketiga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-eliminasi-kolom-ketiga">Langkah 4: Eliminasi Kolom Ketiga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-normalisasi-baris-kedua">Langkah 5: Normalisasi Baris Kedua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-eliminasi-kolom-kedua">Langkah 6: Eliminasi Kolom Kedua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi">Solusi</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
