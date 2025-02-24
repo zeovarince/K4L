@@ -5,7 +5,7 @@
 ### Eliminasi gauss
 Contoh soal:
 Selesaikan dengan menggunakan Eliminasi Gauss
-* 1.
+#### Contoh 1.
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3=6\\
@@ -14,13 +14,12 @@ x_3+x_2=2\\
 \end{array}
 $$
 Penyelesaian:
-$$
 \begin{aligned}
 x_1 + 2x_2 + 3x_3 &= 6 \\
 2x_1 + 4x_2 + 6x_3 &= 12 \\
 x_3 - x_2 &= 2
 \end{aligned}
-$$
+
 Matriks augmented:
 
 \begin{bmatrix}
@@ -66,7 +65,7 @@ Penyelesaian :
 2 & 0 & 1 & 5 \\
 1 & 2 & 0 & 3
 \end{array}
-### Langkah 1: Eliminasi Baris Pertama
+Langkah 1: Eliminasi Baris Pertama
 Kita akan mengeliminasi elemen di bawah elemen pertama pada kolom pertama dengan mengurangi baris kedua dengan 2 kali baris pertama dan mengurangi baris ketiga dengan baris pertama.
 
 - Baris 2 → Baris 2 - 2 × Baris 1
@@ -80,7 +79,7 @@ Maka hasilnya adalah:
 0 & 1 & -1 & 0
 \end{array}
 
-### Langkah 2: Eliminasi Baris Kedua
+Langkah 2: Eliminasi Baris Kedua
 Sekarang kita akan mengeliminasi elemen di bawah elemen kedua pada kolom kedua dengan menambah baris ketiga dengan setengah baris kedua.
 
 - Baris 3 → Baris 3 + 1/2 dikali baris 2
@@ -94,7 +93,7 @@ Hasilnya adalah:
 0 & 0 & -\frac{3}{2} & -\frac{1}{2}
 \end{array}
 
-### Langkah 3: Normalisasi Baris Ketiga
+Langkah 3: Normalisasi Baris Ketiga
 Kita akan mengalikan baris ketiga dengan \(-\frac{2}{3}\) untuk menjadikan elemen di baris ketiga, kolom ketiga menjadi 1:
 
 - Baris 3 → -2/3 dikali baris 3
@@ -108,7 +107,7 @@ Hasilnya menjadi:
 \end{array}
 
 
-### Langkah 4: Eliminasi Kolom Ketiga
+Langkah 4: Eliminasi Kolom Ketiga
 Sekarang kita akan mengeliminasi elemen-elemen di atas kolom ketiga.
 
 - Baris 1 → Baris 1 - Baris 3
@@ -123,7 +122,7 @@ Maka hasilnya adalah:
 \end{array}
 
 
-### Langkah 5: Normalisasi Baris Kedua
+Langkah 5: Normalisasi Baris Kedua
 Kita akan mengalikan baris kedua dengan \(-\frac{1}{2}\) untuk menjadikan elemen di baris kedua, kolom kedua menjadi 1:
 
 - Baris 2 → \(-\frac{1}{2} \times \text{Baris 2}\)
@@ -136,7 +135,7 @@ Hasilnya menjadi:
 0 & 0 & 1 & \frac{1}{3}
 \end{array}
 
-### Langkah 6: Eliminasi Kolom Kedua
+Langkah 6: Eliminasi Kolom Kedua
 Sekarang kita akan mengeliminasi elemen di atas kolom kedua.
 
 - Baris 1 → Baris 1 - Baris 2
@@ -150,7 +149,7 @@ Hasil akhirnya menjadi:
 \end{array}
 
 
-### Solusi
+Solusi
 Solusi akhir dari persamaan diatas adalah: 
 $$
 \begin{array}{cc}

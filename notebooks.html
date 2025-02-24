@@ -367,14 +367,10 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi baris elementer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris-pertama">Langkah 1: Eliminasi Baris Pertama</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-eliminasi-baris-kedua">Langkah 2: Eliminasi Baris Kedua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-normalisasi-baris-ketiga">Langkah 3: Normalisasi Baris Ketiga</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-eliminasi-kolom-ketiga">Langkah 4: Eliminasi Kolom Ketiga</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-normalisasi-baris-kedua">Langkah 5: Normalisasi Baris Kedua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-eliminasi-kolom-kedua">Langkah 6: Eliminasi Kolom Kedua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi">Solusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1">Contoh 1.</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -395,12 +391,8 @@
 <h2>Eliminasi gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h2>
 <p>Contoh soal:
 Selesaikan dengan menggunakan Eliminasi Gauss</p>
-<ul class="simple">
-<li><ol class="arabic simple">
-<li></li>
-</ol>
-</li>
-</ul>
+<section id="contoh-1">
+<h3>Contoh 1.<a class="headerlink" href="#contoh-1" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{array}{cc}
@@ -410,14 +402,12 @@ x_3+x_2=2\\
 \end{array}
 \end{split}\]</div>
 <p>Penyelesaian:
-$<span class="math notranslate nohighlight">\(
 \begin{aligned}
-x_1 + 2x_2 + 3x_3 &amp;= 6 \\
-2x_1 + 4x_2 + 6x_3 &amp;= 12 \\
+x_1 + 2x_2 + 3x_3 &amp;= 6 \
+2x_1 + 4x_2 + 6x_3 &amp;= 12 \
 x_3 - x_2 &amp;= 2
-\end{aligned}
-\)</span>$
-Matriks augmented:</p>
+\end{aligned}</p>
+<p>Matriks augmented:</p>
 <p>\begin{bmatrix}
 1 &amp; 2 &amp; 3 &amp; | 6 \
 2 &amp; 4 &amp; 6 &amp; | 12 \
@@ -458,12 +448,10 @@ x_1+2x_2=3\\
 1 &amp; 1 &amp; 1 &amp; 3 \
 2 &amp; 0 &amp; 1 &amp; 5 \
 1 &amp; 2 &amp; 0 &amp; 3
-\end{array}</p></li>
+\end{array}
+Langkah 1: Eliminasi Baris Pertama
+Kita akan mengeliminasi elemen di bawah elemen pertama pada kolom pertama dengan mengurangi baris kedua dengan 2 kali baris pertama dan mengurangi baris ketiga dengan baris pertama.</p></li>
 </ul>
-</section>
-<section id="langkah-1-eliminasi-baris-pertama">
-<h2>Langkah 1: Eliminasi Baris Pertama<a class="headerlink" href="#langkah-1-eliminasi-baris-pertama" title="Link to this heading">#</a></h2>
-<p>Kita akan mengeliminasi elemen di bawah elemen pertama pada kolom pertama dengan mengurangi baris kedua dengan 2 kali baris pertama dan mengurangi baris ketiga dengan baris pertama.</p>
 <ul class="simple">
 <li><p>Baris 2 → Baris 2 - 2 × Baris 1</p></li>
 <li><p>Baris 3 → Baris 3 - Baris 1</p></li>
@@ -474,10 +462,8 @@ x_1+2x_2=3\\
 0 &amp; -2 &amp; -1 &amp; -1 \
 0 &amp; 1 &amp; -1 &amp; 0
 \end{array}</p>
-</section>
-<section id="langkah-2-eliminasi-baris-kedua">
-<h2>Langkah 2: Eliminasi Baris Kedua<a class="headerlink" href="#langkah-2-eliminasi-baris-kedua" title="Link to this heading">#</a></h2>
-<p>Sekarang kita akan mengeliminasi elemen di bawah elemen kedua pada kolom kedua dengan menambah baris ketiga dengan setengah baris kedua.</p>
+<p>Langkah 2: Eliminasi Baris Kedua
+Sekarang kita akan mengeliminasi elemen di bawah elemen kedua pada kolom kedua dengan menambah baris ketiga dengan setengah baris kedua.</p>
 <ul class="simple">
 <li><p>Baris 3 → Baris 3 + 1/2 dikali baris 2</p></li>
 </ul>
@@ -487,10 +473,8 @@ x_1+2x_2=3\\
 0 &amp; -2 &amp; -1 &amp; -1 \
 0 &amp; 0 &amp; -\frac{3}{2} &amp; -\frac{1}{2}
 \end{array}</p>
-</section>
-<section id="langkah-3-normalisasi-baris-ketiga">
-<h2>Langkah 3: Normalisasi Baris Ketiga<a class="headerlink" href="#langkah-3-normalisasi-baris-ketiga" title="Link to this heading">#</a></h2>
-<p>Kita akan mengalikan baris ketiga dengan (-\frac{2}{3}) untuk menjadikan elemen di baris ketiga, kolom ketiga menjadi 1:</p>
+<p>Langkah 3: Normalisasi Baris Ketiga
+Kita akan mengalikan baris ketiga dengan (-\frac{2}{3}) untuk menjadikan elemen di baris ketiga, kolom ketiga menjadi 1:</p>
 <ul class="simple">
 <li><p>Baris 3 → -2/3 dikali baris 3</p></li>
 </ul>
@@ -500,10 +484,8 @@ x_1+2x_2=3\\
 0 &amp; -2 &amp; -1 &amp; -1 \
 0 &amp; 0 &amp; 1 &amp; \frac{1}{3}
 \end{array}</p>
-</section>
-<section id="langkah-4-eliminasi-kolom-ketiga">
-<h2>Langkah 4: Eliminasi Kolom Ketiga<a class="headerlink" href="#langkah-4-eliminasi-kolom-ketiga" title="Link to this heading">#</a></h2>
-<p>Sekarang kita akan mengeliminasi elemen-elemen di atas kolom ketiga.</p>
+<p>Langkah 4: Eliminasi Kolom Ketiga
+Sekarang kita akan mengeliminasi elemen-elemen di atas kolom ketiga.</p>
 <ul class="simple">
 <li><p>Baris 1 → Baris 1 - Baris 3</p></li>
 <li><p>Baris 2 → Baris 2 + Baris 3</p></li>
@@ -514,10 +496,8 @@ x_1+2x_2=3\\
 0 &amp; -2 &amp; 0 &amp; -\frac{2}{3} \
 0 &amp; 0 &amp; 1 &amp; \frac{1}{3}
 \end{array}</p>
-</section>
-<section id="langkah-5-normalisasi-baris-kedua">
-<h2>Langkah 5: Normalisasi Baris Kedua<a class="headerlink" href="#langkah-5-normalisasi-baris-kedua" title="Link to this heading">#</a></h2>
-<p>Kita akan mengalikan baris kedua dengan (-\frac{1}{2}) untuk menjadikan elemen di baris kedua, kolom kedua menjadi 1:</p>
+<p>Langkah 5: Normalisasi Baris Kedua
+Kita akan mengalikan baris kedua dengan (-\frac{1}{2}) untuk menjadikan elemen di baris kedua, kolom kedua menjadi 1:</p>
 <ul class="simple">
 <li><p>Baris 2 → (-\frac{1}{2} \times \text{Baris 2})</p></li>
 </ul>
@@ -527,10 +507,8 @@ x_1+2x_2=3\\
 0 &amp; 1 &amp; 0 &amp; \frac{1}{3} \
 0 &amp; 0 &amp; 1 &amp; \frac{1}{3}
 \end{array}</p>
-</section>
-<section id="langkah-6-eliminasi-kolom-kedua">
-<h2>Langkah 6: Eliminasi Kolom Kedua<a class="headerlink" href="#langkah-6-eliminasi-kolom-kedua" title="Link to this heading">#</a></h2>
-<p>Sekarang kita akan mengeliminasi elemen di atas kolom kedua.</p>
+<p>Langkah 6: Eliminasi Kolom Kedua
+Sekarang kita akan mengeliminasi elemen di atas kolom kedua.</p>
 <ul class="simple">
 <li><p>Baris 1 → Baris 1 - Baris 2</p></li>
 </ul>
@@ -540,10 +518,8 @@ x_1+2x_2=3\\
 0 &amp; 1 &amp; 0 &amp; \frac{1}{3} \
 0 &amp; 0 &amp; 1 &amp; \frac{1}{3}
 \end{array}</p>
-</section>
-<section id="solusi">
-<h2>Solusi<a class="headerlink" href="#solusi" title="Link to this heading">#</a></h2>
-<p>Solusi akhir dari persamaan diatas adalah:
+<p>Solusi
+Solusi akhir dari persamaan diatas adalah:
 $<span class="math notranslate nohighlight">\(
 \begin{array}{cc}
 x_1=\frac{7}{3} \\
@@ -627,6 +603,7 @@ x_3 &amp;= t, \quad t \in \mathbb{R}.
 \end{aligned}</p>
 </section>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -694,14 +671,10 @@ x_3 &amp;= t, \quad t \in \mathbb{R}.
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi baris elementer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris-pertama">Langkah 1: Eliminasi Baris Pertama</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-eliminasi-baris-kedua">Langkah 2: Eliminasi Baris Kedua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-normalisasi-baris-ketiga">Langkah 3: Normalisasi Baris Ketiga</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-eliminasi-kolom-ketiga">Langkah 4: Eliminasi Kolom Ketiga</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-normalisasi-baris-kedua">Langkah 5: Normalisasi Baris Kedua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-eliminasi-kolom-kedua">Langkah 6: Eliminasi Kolom Kedua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi">Solusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1">Contoh 1.</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
