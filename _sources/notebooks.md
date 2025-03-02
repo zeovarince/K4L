@@ -14,12 +14,13 @@ x_3+x_2=2\\
 \end{array}
 $$
 Penyelesaian:
-\begin{aligned}
-x_1 + 2x_2 + 3x_3 &= 6 \\
-2x_1 + 4x_2 + 6x_3 &= 12 \\
-x_3 + x_2 &= 2
-\end{aligned}
-
+$$
+\begin{array}{cc}
+x_1+2x_2+3x_3=6\\
+2x_1+4x_2+6x_3=12\\
+x_3+x_2=2\\
+\end{array}
+$$
 Matriks augmented:
 $
 \begin{bmatrix}
