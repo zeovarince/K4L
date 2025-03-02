@@ -576,33 +576,82 @@ x_1+2x_3=6
 \end{array}
 \end{split}\]</div>
 <p>Penyelesaian:
-\begin{aligned}
-x_1 + x_2 &amp;= 5 \
-x_1 + 2x_3 &amp;= 6
-\end{aligned}</p>
-<p>Matriks augmented:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 0 &amp; | 5 \
-1 &amp; 0 &amp; 2 &amp; | 6
-\end{bmatrix}</p>
-<p>Eliminasi dengan mengurangi baris kedua dengan baris pertama:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 0 &amp; | 5 \
-0 &amp; -1 &amp; 2 &amp; | 1
-\end{bmatrix}</p>
-<p>Dari baris kedua:
-$$</p>
-<ul class="simple">
-<li><p>x_2 + 2x_3 = 1 \Rightarrow x_2 = 2x_3 - 1.</p></li>
-</ul>
-<p>x_1 + (2x_3 - 1) = 5 \Rightarrow x_1 = 6 - 2x_3.
-$$
-Solusi umum:</p>
-<p>\begin{aligned}
-x_1 &amp;= 6 - 2t, \
-x_2 &amp;= 2t - 1, \
-x_3 &amp;= t, \quad t \in \mathbb{R}.
-\end{aligned}</p>
+Diberikan sistem persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + x_2 = 5
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_3 = 6
+\]</div>
+<p>Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | &amp; 5 \\
+1 &amp; 0 &amp; 2 &amp; | &amp; 6
+\end{bmatrix}
+\end{split}\]</div>
+<p>Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 - R_1
+\]</div>
+<p>Setelah melakukan perhitungan, kita mendapatkan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_2: \quad 1 - 1 = 0 \\
+0 - 1 = -1 \\
+2 - 0 = 2 \\
+6 - 5 = 1
+\end{split}\]</div>
+<p>Sehingga, matriks augmented menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | &amp; 5 \\
+0 &amp; -1 &amp; 2 &amp; | &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Selanjutnya, kita dapat menyelesaikan baris kedua untuk mengekspresikan (x_2) dalam bentuk (x_3):</p>
+<div class="math notranslate nohighlight">
+\[
+-1x_2 + 2x_3 = 1 \implies x_2 = 2x_3 - 1
+\]</div>
+<p>Sekarang kita substitusi (x_2) ke dalam persamaan pertama:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + (2x_3 - 1) = 5
+\]</div>
+<p>Maka kita dapatkan:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_3 - 1 = 5 \implies x_1 = 6 - 2x_3
+\]</div>
+<p>Karena kita memiliki dua persamaan dengan tiga variabel, kita dapat menyatakan solusi dalam bentuk parameter. Misalkan (x_3 = p), maka:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 = 6 - 2p
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_2 = 2p - 1
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_3 = p
+\]</div>
+<p>Jadi, solusi umum dari sistem persamaan ini adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x_1 = 6 - 2p \\
+x_2 = 2p - 1 \\
+x_3 = p
+\end{cases}
+\end{split}\]</div>
+<p>di mana (p) adalah parameter bebas.</p>
 </section>
 </section>
 </section>
