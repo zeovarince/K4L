@@ -32,11 +32,12 @@ $
 Baris kedua dikurangi 2 kali baris pertama:
 $
 \begin{bmatrix}
-$1 & 2 & 3 & | 6 \\$
-$0 & 0 & 0 & | 0 \\$
-$0 & -1 & 1 & | 2$
+1 & 2 & 3 & | 6 \\
+0 & 0 & 0 & | 0 \\
+0 & -1 & 1 & | 2 
 \end{bmatrix}
 $
+
 Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga.
 Variabel bebas: , maka
 
