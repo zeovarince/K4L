@@ -15,15 +15,15 @@ x_3+x_2=2\\
 $$
 Penyelesaian:
 $$
-[ \begin{array}{cc} x_1 + 2x_2 + 3x_3 = 6 \ 2x_1 + 4x_2 + 6x_3 = 12 \ x_3 + x_2 = 2 \ \end{array} ]
+[ \begin{array}{cc} x_1 + 2x_2 + 3x_3 = 6 \\ 2x_1 + 4x_2 + 6x_3 = 12 \\ x_3 + x_2 = 2 \\ \end{array} ]
 $$
 Matriks augmented:
 $$
-[ \begin{bmatrix} 1 & 2 & 3 & | & 6 \ 2 & 4 & 6 & | & 12 \ 0 & -1 & 1 & | & 2 \end{bmatrix} ]
+[ \begin{bmatrix} 1 & 2 & 3 & | & 6 \\ 2 & 4 & 6 & | & 12 \\ 0 & -1 & 1 & | & 2 \\ \end{bmatrix} ]
 $$
 Baris kedua dikurangi 2 kali baris pertama:
 $$
-[ \begin{bmatrix} 1 & 2 & 3 & | & 6 \ 0 & 0 & 0 & | & 0 \ 0 & -1 & 1 & | & 2 \end{bmatrix} ]
+[ \begin{bmatrix} 1 & 2 & 3 & | & 6 \\ 0 & 0 & 0 & | & 0 \\ 0 & -1 & 1 & | & 2\\ \end{bmatrix} ]
 $$
 Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga. Variabel bebas:
 $$
