@@ -36,7 +36,7 @@ Karna ada variabel bebas $$x_3 = t $$ Sehingga, solusi umum dari sistem persamaa
 
 $$\begin{aligned} x_1 &= 2-t, \\ x_2 &= 2-t, \\ x_3 &= t, \quad t \in \mathbb{R}. \end{aligned}$$
 
-* 2. 
+#### Contoh 2. 
 $$
 \begin{array}{cc}
 x_1+x_2+x_3=3\\
@@ -146,7 +146,7 @@ x_2=\frac{1}{3} \\
 x_3=\frac{1}{3}
 \end{array}$$
 
-* 3. 
+#### Contoh 3. 
 $$
 \begin{array}{cc}
 2x_1+2x_2=4\\
@@ -200,7 +200,7 @@ $$ x_1 = 2 - 2 = 0 \quad \Rightarrow \quad (x_1, x_2) = (0, 2)$$
 Dengan demikian, solusi dari sistem persamaan ini adalah semua pasangan $((x_1, x_2))$ yang memenuhi:
 
 $$ (x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} $$
-* 4. 
+## Contoh  4. 
 $$
 \begin{array}{cc}
 x_1+x_2=5\\
