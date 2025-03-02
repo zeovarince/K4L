@@ -389,6 +389,39 @@
 <h1>Penyelesaian sistem persamaan linear<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h1>
 <section id="operasi-baris-elementer">
 <h2>Operasi baris elementer<a class="headerlink" href="#operasi-baris-elementer" title="Link to this heading">#</a></h2>
+<p>Operasi Baris Elementer (OBE) adalah teknik yang digunakan dalam aljabar linier untuk menyelesaikan sistem persamaan linear, menemukan invers matriks, dan melakukan berbagai manipulasi pada matriks. Ada tiga jenis operasi baris elementer yang dapat dilakukan pada matriks:</p>
+<ol class="arabic simple">
+<li><p>Pertukaran Dua Baris
+Operasi ini melibatkan pertukaran posisi dua baris dalam matriks. Misalnya, jika kita memiliki matriks (A):</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{bmatrix} a_{11} &amp; a_{12} \ a_{21} &amp; a_{22} \end{bmatrix}\]</div>
+<p>Setelah melakukan pertukaran baris 1 dan baris 2, matriks menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{bmatrix} a_{21} &amp; a_{22} \ a_{11} &amp; a_{12} \end{bmatrix}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Mengalikan Baris dengan Skalar
+Operasi ini melibatkan mengalikan semua elemen dalam suatu baris dengan bilangan skalar (non-nol). Misalnya, jika kita mengalikan baris 1 dengan skalar (k):</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{bmatrix} a_{11} &amp; a_{12} \ a_{21} &amp; a_{22} \end{bmatrix} \]</div>
+<p>Setelah mengalikan baris 1 dengan (k), matriks menjadi:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{bmatrix} k \cdot a_{11} &amp; k \cdot a_{12} \ a_{21} &amp; a_{22} \end{bmatrix} \]</div>
+<ol class="arabic simple" start="3">
+<li><p>Menambahkan Kelipatan Baris ke Baris Lain
+Operasi ini melibatkan menambahkan kelipatan dari satu baris ke baris lain. Misalnya, jika kita ingin menambahkan (k) kali baris 1 ke baris 2:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[ \begin{bmatrix} a_{11} &amp; a_{12} \ a_{21} &amp; a_{22} \end{bmatrix} \]</div>
+<p>Setelah menambahkan (k) kali baris 1 ke baris 2, matriks menjadi:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{bmatrix} a_{11} &amp; a_{12} \ a_{21} + k \cdot a_{11} &amp; a_{22} + k \cdot a_{12} \end{bmatrix} \]</div>
+<p>Penerapan Operasi Baris Elementer
+Operasi baris elementer digunakan dalam berbagai konteks, termasuk:</p>
+<p>Menyelesaikan Sistem Persamaan Linear: Dengan menggunakan metode eliminasi Gauss atau Gauss-Jordan, kita dapat mengubah sistem persamaan menjadi bentuk yang lebih sederhana (bentuk eselon atau bentuk eselon tereduksi) untuk menemukan solusi.</p>
+<p>Menemukan Invers Matriks: Dengan menerapkan operasi baris elementer pada matriks yang ingin dicari inversnya dan matriks identitas, kita dapat menemukan invers matriks tersebut.</p>
+<p>Menentukan Peringkat Matriks: Dengan mengubah matriks ke bentuk eselon, kita dapat menentukan jumlah baris non-nol, yang menunjukkan peringkat matriks.</p>
 </section>
 <section id="eliminasi-gauss">
 <h2>Eliminasi gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h2>

@@ -1,7 +1,43 @@
 # Penyelesaian sistem persamaan linear
 
 ### Operasi baris elementer
+Operasi Baris Elementer (OBE) adalah teknik yang digunakan dalam aljabar linier untuk menyelesaikan sistem persamaan linear, menemukan invers matriks, dan melakukan berbagai manipulasi pada matriks. Ada tiga jenis operasi baris elementer yang dapat dilakukan pada matriks:
 
+1. Pertukaran Dua Baris
+Operasi ini melibatkan pertukaran posisi dua baris dalam matriks. Misalnya, jika kita memiliki matriks (A):
+
+$$\begin{bmatrix} a_{11} & a_{12} \ a_{21} & a_{22} \end{bmatrix}$$
+
+Setelah melakukan pertukaran baris 1 dan baris 2, matriks menjadi:
+
+$$\begin{bmatrix} a_{21} & a_{22} \ a_{11} & a_{12} \end{bmatrix}$$
+
+2. Mengalikan Baris dengan Skalar
+Operasi ini melibatkan mengalikan semua elemen dalam suatu baris dengan bilangan skalar (non-nol). Misalnya, jika kita mengalikan baris 1 dengan skalar (k):
+
+$$\begin{bmatrix} a_{11} & a_{12} \ a_{21} & a_{22} \end{bmatrix} $$
+
+Setelah mengalikan baris 1 dengan (k), matriks menjadi:
+
+$$ \begin{bmatrix} k \cdot a_{11} & k \cdot a_{12} \ a_{21} & a_{22} \end{bmatrix} $$
+
+3. Menambahkan Kelipatan Baris ke Baris Lain
+Operasi ini melibatkan menambahkan kelipatan dari satu baris ke baris lain. Misalnya, jika kita ingin menambahkan (k) kali baris 1 ke baris 2:
+
+$$ \begin{bmatrix} a_{11} & a_{12} \ a_{21} & a_{22} \end{bmatrix} $$
+
+Setelah menambahkan (k) kali baris 1 ke baris 2, matriks menjadi:
+
+$$ \begin{bmatrix} a_{11} & a_{12} \ a_{21} + k \cdot a_{11} & a_{22} + k \cdot a_{12} \end{bmatrix} $$
+
+Penerapan Operasi Baris Elementer
+Operasi baris elementer digunakan dalam berbagai konteks, termasuk:
+
+Menyelesaikan Sistem Persamaan Linear: Dengan menggunakan metode eliminasi Gauss atau Gauss-Jordan, kita dapat mengubah sistem persamaan menjadi bentuk yang lebih sederhana (bentuk eselon atau bentuk eselon tereduksi) untuk menemukan solusi.
+
+Menemukan Invers Matriks: Dengan menerapkan operasi baris elementer pada matriks yang ingin dicari inversnya dan matriks identitas, kita dapat menemukan invers matriks tersebut.
+
+Menentukan Peringkat Matriks: Dengan mengubah matriks ke bentuk eselon, kita dapat menentukan jumlah baris non-nol, yang menunjukkan peringkat matriks.
 ### Eliminasi gauss
 Contoh soal:
 Selesaikan dengan menggunakan Eliminasi Gauss
