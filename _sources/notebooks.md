@@ -236,7 +236,7 @@ $$ x_1 = 2 - 2 = 0 \quad \Rightarrow \quad (x_1, x_2) = (0, 2)$$
 Dengan demikian, solusi dari sistem persamaan ini adalah semua pasangan $((x_1, x_2))$ yang memenuhi:
 
 $$ (x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} $$
-## Contoh  4. 
+#### Contoh  4. 
 $$
 \begin{array}{cc}
 x_1+x_2=5\\
