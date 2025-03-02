@@ -166,7 +166,7 @@ $$ R_1 \leftarrow R_1 - 2R_2 $$
 
 Maka, kita lakukan:
 
-$$ R_1: \quad 2 - 2 \cdot 1 = 0 \ 2 - 2 \cdot 1 = 0 \ 4 - 2 \cdot 2 = 0 $$
+$$ R_1: \quad 2 - 2 \cdot 1 = 0 \\ 2 - 2 \cdot 1 = 0 \\ 4 - 2 \cdot 2 = 0 $$
 
 Sehingga, matriks augmented menjadi:
 
@@ -184,19 +184,19 @@ Dengan demikian, solusi umum untuk sistem persamaan ini adalah:
 
 $$(x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} $$
 
-Sebagai contoh, jika kita memilih $$(x_2 = 0)$$, maka:
+Sebagai contoh, jika kita memilih $(x_2 = 0)$, maka:
 
 $$ x_1 = 2 - 0 = 2 \quad \Rightarrow \quad (x_1, x_2) = (2, 0)$$
 
-Jika kita memilih $$(x_2 = 1)$$, maka:
+Jika kita memilih $(x_2 = 1)$, maka:
 
 $$x_1 = 2 - 1 = 1 \quad \Rightarrow \quad (x_1, x_2) = (1, 1)$$
 
-Dan jika kita memilih $$(x_2 = 2)$$, maka:
+Dan jika kita memilih $(x_2 = 2)$, maka:
 
 $$ x_1 = 2 - 2 = 0 \quad \Rightarrow \quad (x_1, x_2) = (0, 2)$$
 
-Dengan demikian, solusi dari sistem persamaan ini adalah semua pasangan $$((x_1, x_2))$$ yang memenuhi:
+Dengan demikian, solusi dari sistem persamaan ini adalah semua pasangan $((x_1, x_2))$ yang memenuhi:
 
 $$ (x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} $$
 * 4. 
