@@ -26,18 +26,16 @@ Baris kedua dikurangi 2 kali baris pertama:
 
 $$ \begin{bmatrix} 1 & 2 & 3 & | & 6 \\ 0 & 0 & 0 & | & 0 \\ 0 & 1 & 1 & | & 2\\ \end{bmatrix} $$
 
-Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga. Variabel bebas:
-
-$$ x_2 = t - 2, \quad x_3 = t $$
-
 Maka,
 
-$$ x_1 = 2x_2 - 3x_3 + 6 = -2(t - 2) - 3t + 6 = -5t + 10 $$
+$$ x_1 + 2x_2 + 3x_3 + 6 = x_1 + 2(2 - x_3) + 3x_3 = 6 \\ x_1+ 4 -2x_2 + 3x_3 = 6\\ x_1+x_3 = 6 - 4\\ x_1 = 2 - x_3  $$
 
-Sehingga, solusi umum dari sistem persamaan tersebut adalah:
-$$
-[ \begin{aligned} x_1 &= -5t + 10, \ x_2 &= t - 2, \ x_3 &= t, \quad t \in \mathbb{R}. \end{aligned} ]
-$$
+
+
+Karna ada variabel bebas $$x_3 = t $$ Sehingga, solusi umum dari sistem persamaan tersebut adalah:
+
+$$\begin{aligned} x_1 &= 2-t, \\ x_2 &= 2-t, \ x_3 &= t, \quad t \in \mathbb{R}. \end{aligned}$$
+
 * 2. 
 $$
 \begin{array}{cc}
