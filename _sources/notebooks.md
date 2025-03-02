@@ -61,11 +61,11 @@ Kita akan mengeliminasi elemen di bawah elemen pertama pada kolom pertama dengan
 
 Maka hasilnya adalah:
 
-\begin{array}{ccc|c}
+$$\begin{array}{ccc|c}
 1 & 1 & 1 & 3 \\
 0 & -2 & -1 & -1 \\
 0 & 1 & -1 & 0
-\end{array}
+\end{array}$$
 
 Langkah 2: Eliminasi Baris Kedua
 Sekarang kita akan mengeliminasi elemen di bawah elemen kedua pada kolom kedua dengan menambah baris ketiga dengan setengah baris kedua.
@@ -75,11 +75,11 @@ Sekarang kita akan mengeliminasi elemen di bawah elemen kedua pada kolom kedua d
 Hasilnya adalah:
 
 
-\begin{array}{ccc|c}
+$$\begin{array}{ccc|c}
 1 & 1 & 1 & 3 \\
 0 & -2 & -1 & -1 \\
 0 & 0 & -\frac{3}{2} & -\frac{1}{2}
-\end{array}
+\end{array}$$
 
 Langkah 3: Normalisasi Baris Ketiga
 Kita akan mengalikan baris ketiga dengan \(-\frac{2}{3}\) untuk menjadikan elemen di baris ketiga, kolom ketiga menjadi 1:
@@ -88,11 +88,11 @@ Kita akan mengalikan baris ketiga dengan \(-\frac{2}{3}\) untuk menjadikan eleme
 
 Hasilnya menjadi:
 
-\begin{array}{ccc|c}
+$$\begin{array}{ccc|c}
 1 & 1 & 1 & 3 \\
 0 & -2 & -1 & -1 \\
 0 & 0 & 1 & \frac{1}{3}
-\end{array}
+\end{array}$$
 
 
 Langkah 4: Eliminasi Kolom Ketiga
@@ -103,25 +103,25 @@ Sekarang kita akan mengeliminasi elemen-elemen di atas kolom ketiga.
 
 Maka hasilnya adalah:
 
-\begin{array}{ccc|c}
+$$\begin{array}{ccc|c}
 1 & 1 & 0 & \frac{8}{3} \\
 0 & -2 & 0 & -\frac{2}{3} \\
 0 & 0 & 1 & \frac{1}{3}
-\end{array}
+\end{array}$$
 
 
 Langkah 5: Normalisasi Baris Kedua
-Kita akan mengalikan baris kedua dengan \(-\frac{1}{2}\) untuk menjadikan elemen di baris kedua, kolom kedua menjadi 1:
+Kita akan mengalikan baris kedua dengan $$\(-\frac{1}{2}\)$$ untuk menjadikan elemen di baris kedua, kolom kedua menjadi 1:
 
-- Baris 2 → \(-\frac{1}{2} \times \text{Baris 2}\)
+- Baris 2 → $$\(-\frac{1}{2} \times \text{Baris 2}\)$$
 
 Hasilnya menjadi:
 
-\begin{array}{ccc|c}
+$$\begin{array}{ccc|c}
 1 & 1 & 0 & \frac{8}{3} \\
 0 & 1 & 0 & \frac{1}{3} \\
 0 & 0 & 1 & \frac{1}{3}
-\end{array}
+\end{array}$$
 
 Langkah 6: Eliminasi Kolom Kedua
 Sekarang kita akan mengeliminasi elemen di atas kolom kedua.
@@ -130,22 +130,22 @@ Sekarang kita akan mengeliminasi elemen di atas kolom kedua.
 
 Hasil akhirnya menjadi:
 
-\begin{array}{ccc|c}
+$$\begin{array}{ccc|c}
 1 & 0 & 0 & \frac{7}{3} \\
 0 & 1 & 0 & \frac{1}{3} \\
 0 & 0 & 1 & \frac{1}{3}
-\end{array}
+\end{array}$$
 
 
 Solusi
 Solusi akhir dari persamaan diatas adalah: 
-$$
-\begin{array}{cc}
+
+$$\begin{array}{cc}
 x_1=\frac{7}{3} \\
 x_2=\frac{1}{3} \\
 x_3=\frac{1}{3}
-\end{array}
-$$
+\end{array}$$
+
 * 3. 
 $$
 \begin{array}{cc}
