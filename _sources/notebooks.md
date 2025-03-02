@@ -111,9 +111,9 @@ $$\begin{array}{ccc|c}
 
 
 Langkah 5: Normalisasi Baris Kedua
-Kita akan mengalikan baris kedua dengan $$\(-\frac{1}{2}\)$$ untuk menjadikan elemen di baris kedua, kolom kedua menjadi 1:
+Kita akan mengalikan baris kedua dengan -1/2 untuk menjadikan elemen di baris kedua, kolom kedua menjadi 1:
 
-- Baris 2 → $\(-\frac{1}{2} \times \text{Baris 2}\)$
+- Baris 2 → -1/2 x baris 2
 
 Hasilnya menjadi:
 
