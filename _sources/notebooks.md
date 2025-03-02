@@ -20,20 +20,20 @@ $$ \begin{array}{cc} x_1 + 2x_2 + 3x_3 = 6 \\ 2x_1 + 4x_2 + 6x_3 = 12 \\ x_3 + x
 
 Matriks augmented:
 
-$$ \begin{bmatrix} 1 & 2 & 3 & | & 6 \\ 2 & 4 & 6 & | & 12 \\ 0 & -1 & 1 & | & 2 \\ \end{bmatrix} $$
+$$ \begin{bmatrix} 1 & 2 & 3 & | & 6 \\ 2 & 4 & 6 & | & 12 \\ 0 & 1 & 1 & | & 2 \\ \end{bmatrix} $$
 
 Baris kedua dikurangi 2 kali baris pertama:
 
-$$ \begin{bmatrix} 1 & 2 & 3 & | & 6 \\ 0 & 0 & 0 & | & 0 \\ 0 & -1 & 1 & | & 2\\ \end{bmatrix} $$
+$$ \begin{bmatrix} 1 & 2 & 3 & | & 6 \\ 0 & 0 & 0 & | & 0 \\ 0 & 1 & 1 & | & 2\\ \end{bmatrix} $$
 
 Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga. Variabel bebas:
-$$
-[ x_2 = t - 2, \quad x_3 = t ]
-$$
+
+$$ x_2 = t - 2, \quad x_3 = t $$
+
 Maka,
-$$
-[ x_1 = -2x_2 - 3x_3 + 6 = -2(t - 2) - 3t + 6 = -5t + 10. ]
-$$
+
+$$ x_1 = 2x_2 - 3x_3 + 6 = -2(t - 2) - 3t + 6 = -5t + 10 $$
+
 Sehingga, solusi umum dari sistem persamaan tersebut adalah:
 $$
 [ \begin{aligned} x_1 &= -5t + 10, \ x_2 &= t - 2, \ x_3 &= t, \quad t \in \mathbb{R}. \end{aligned} ]

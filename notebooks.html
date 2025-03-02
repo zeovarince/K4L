@@ -406,20 +406,18 @@ x_3+x_2=2\\
 \[\begin{split} \begin{array}{cc} x_1 + 2x_2 + 3x_3 = 6 \\ 2x_1 + 4x_2 + 6x_3 = 12 \\ x_3 + x_2 = 2 \\ \end{array} \end{split}\]</div>
 <p>Matriks augmented:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} \begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\ 2 &amp; 4 &amp; 6 &amp; | &amp; 12 \\ 0 &amp; -1 &amp; 1 &amp; | &amp; 2 \\ \end{bmatrix} \end{split}\]</div>
+\[\begin{split} \begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\ 2 &amp; 4 &amp; 6 &amp; | &amp; 12 \\ 0 &amp; 1 &amp; 1 &amp; | &amp; 2 \\ \end{bmatrix} \end{split}\]</div>
 <p>Baris kedua dikurangi 2 kali baris pertama:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} \begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\ 0 &amp; 0 &amp; 0 &amp; | &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; | &amp; 2\\ \end{bmatrix} \end{split}\]</div>
-<p>Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga. Variabel bebas:
+\[\begin{split} \begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\ 0 &amp; 0 &amp; 0 &amp; | &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; | &amp; 2\\ \end{bmatrix} \end{split}\]</div>
+<p>Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga. Variabel bebas:</p>
+<div class="math notranslate nohighlight">
+\[ x_2 = t - 2, \quad x_3 = t \]</div>
+<p>Maka,</p>
+<div class="math notranslate nohighlight">
+\[ x_1 = 2x_2 - 3x_3 + 6 = -2(t - 2) - 3t + 6 = -5t + 10 \]</div>
+<p>Sehingga, solusi umum dari sistem persamaan tersebut adalah:
 $<span class="math notranslate nohighlight">\(
-[ x_2 = t - 2, \quad x_3 = t ]
-\)</span><span class="math notranslate nohighlight">\(
-Maka,
-\)</span><span class="math notranslate nohighlight">\(
-[ x_1 = -2x_2 - 3x_3 + 6 = -2(t - 2) - 3t + 6 = -5t + 10. ]
-\)</span><span class="math notranslate nohighlight">\(
-Sehingga, solusi umum dari sistem persamaan tersebut adalah:
-\)</span><span class="math notranslate nohighlight">\(
 [ \begin{aligned} x_1 &amp;= -5t + 10, \ x_2 &amp;= t - 2, \ x_3 &amp;= t, \quad t \in \mathbb{R}. \end{aligned} ]
 \)</span>$</p>
 <ul class="simple">
