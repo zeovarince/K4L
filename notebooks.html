@@ -533,25 +533,40 @@ x_1+x_2=2
 \end{array}
 \end{split}\]</div>
 <p>Penyelesaian :
-\begin{aligned}
-2x_1 + 2x_2 &amp;= Y \
-x_1 + x_2 &amp;= 2
-\end{aligned}</p>
-<p>Matriks augmented:</p>
-<p>\begin{bmatrix}
-2 &amp; 2 &amp; | Y \
-1 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
-<p>Eliminasi dengan membagi baris pertama dengan 2:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; | \frac{Y}{2} \
-1 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
-<p>Kurangi baris kedua dengan baris pertama:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; | \frac{Y}{2} \
-0 &amp; 0 &amp; | 2 - \frac{Y}{2}
-\end{bmatrix}</p>
+$<span class="math notranslate nohighlight">\(\begin{array}{cc} 2x_1 + 2x_2 = 4 \quad (1) \\ x_1 + x_2 = 2 \quad (2) \end{array} \)</span>$</p>
+<p>matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{bmatrix} 2 &amp; 2 &amp; | &amp; 4 \ 1 &amp; 1 &amp; | &amp; 2 \end{bmatrix}\]</div>
+<p>Membuat elemen di bawah pivot menjadi nol. Kita dapat melakukannya dengan mengurangi baris pertama dengan dua kali baris kedua:</p>
+<div class="math notranslate nohighlight">
+\[ R_1 \leftarrow R_1 - 2R_2 \]</div>
+<p>Maka, kita lakukan:</p>
+<div class="math notranslate nohighlight">
+\[ R_1: \quad 2 - 2 \cdot 1 = 0 \ 2 - 2 \cdot 1 = 0 \ 4 - 2 \cdot 2 = 0 \]</div>
+<p>Sehingga, matriks augmented menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{bmatrix} 0 &amp; 0 &amp; | &amp; 0 \\ 1 &amp; 1 &amp; | &amp; 2 \\end{bmatrix} \end{split}\]</div>
+<p>Matriks ini menunjukkan bahwa kita memiliki satu persamaan yang valid dan satu persamaan yang identik (0 = 0). Dari baris kedua, kita dapat menuliskan persamaan:</p>
+<div class="math notranslate nohighlight">
+\[ x_1 + x_2 = 2 \quad (2) \]</div>
+<p>Karena baris pertama adalah 0 = 0, ini menunjukkan bahwa sistem ini memiliki solusi tak terhingga. Kita dapat menyelesaikan untuk salah satu variabel. Misalkan kita menyelesaikan untuk (x_1):</p>
+<div class="math notranslate nohighlight">
+\[ x_1 = 2 - x_2 \]</div>
+<p>Dengan demikian, solusi umum untuk sistem persamaan ini adalah:</p>
+<div class="math notranslate nohighlight">
+\[(x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} \]</div>
+<p>Sebagai contoh, jika kita memilih $<span class="math notranslate nohighlight">\((x_2 = 0)\)</span>$, maka:</p>
+<div class="math notranslate nohighlight">
+\[ x_1 = 2 - 0 = 2 \quad \Rightarrow \quad (x_1, x_2) = (2, 0)\]</div>
+<p>Jika kita memilih $<span class="math notranslate nohighlight">\((x_2 = 1)\)</span>$, maka:</p>
+<div class="math notranslate nohighlight">
+\[x_1 = 2 - 1 = 1 \quad \Rightarrow \quad (x_1, x_2) = (1, 1)\]</div>
+<p>Dan jika kita memilih $<span class="math notranslate nohighlight">\((x_2 = 2)\)</span>$, maka:</p>
+<div class="math notranslate nohighlight">
+\[ x_1 = 2 - 2 = 0 \quad \Rightarrow \quad (x_1, x_2) = (0, 2)\]</div>
+<p>Dengan demikian, solusi dari sistem persamaan ini adalah semua pasangan $<span class="math notranslate nohighlight">\(((x_1, x_2))\)</span>$ yang memenuhi:</p>
+<div class="math notranslate nohighlight">
+\[ (x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} \]</div>
 <ul class="simple">
 <li><ol class="arabic simple" start="4">
 <li></li>

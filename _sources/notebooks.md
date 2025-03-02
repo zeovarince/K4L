@@ -154,32 +154,51 @@ x_1+x_2=2
 \end{array}
 $$
 Penyelesaian :
-\begin{aligned}
-2x_1 + 2x_2 &= Y \\
-x_1 + x_2 &= 2
-\end{aligned}
+$$\begin{array}{cc} 2x_1 + 2x_2 = 4 \quad (1) \\ x_1 + x_2 = 2 \quad (2) \end{array} $$
 
-Matriks augmented:
+matriks augmented:
 
-\begin{bmatrix}
-2 & 2 & | Y \\
-1 & 1 & | 2
-\end{bmatrix}
+$$\begin{bmatrix} 2 & 2 & | & 4 \ 1 & 1 & | & 2 \end{bmatrix}$$
 
-Eliminasi dengan membagi baris pertama dengan 2:
+Membuat elemen di bawah pivot menjadi nol. Kita dapat melakukannya dengan mengurangi baris pertama dengan dua kali baris kedua:
 
-\begin{bmatrix}
-1 & 1 & | \frac{Y}{2} \\
-1 & 1 & | 2
-\end{bmatrix}
+$$ R_1 \leftarrow R_1 - 2R_2 $$
 
-Kurangi baris kedua dengan baris pertama:
+Maka, kita lakukan:
 
-\begin{bmatrix}
-1 & 1 & | \frac{Y}{2} \\
-0 & 0 & | 2 - \frac{Y}{2}
-\end{bmatrix}
+$$ R_1: \quad 2 - 2 \cdot 1 = 0 \ 2 - 2 \cdot 1 = 0 \ 4 - 2 \cdot 2 = 0 $$
 
+Sehingga, matriks augmented menjadi:
+
+$$ \begin{bmatrix} 0 & 0 & | & 0 \\ 1 & 1 & | & 2 \\end{bmatrix} $$
+
+Matriks ini menunjukkan bahwa kita memiliki satu persamaan yang valid dan satu persamaan yang identik (0 = 0). Dari baris kedua, kita dapat menuliskan persamaan:
+
+$$ x_1 + x_2 = 2 \quad (2) $$
+
+Karena baris pertama adalah 0 = 0, ini menunjukkan bahwa sistem ini memiliki solusi tak terhingga. Kita dapat menyelesaikan untuk salah satu variabel. Misalkan kita menyelesaikan untuk (x_1):
+
+$$ x_1 = 2 - x_2 $$
+
+Dengan demikian, solusi umum untuk sistem persamaan ini adalah:
+
+$$(x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} $$
+
+Sebagai contoh, jika kita memilih $$(x_2 = 0)$$, maka:
+
+$$ x_1 = 2 - 0 = 2 \quad \Rightarrow \quad (x_1, x_2) = (2, 0)$$
+
+Jika kita memilih $$(x_2 = 1)$$, maka:
+
+$$x_1 = 2 - 1 = 1 \quad \Rightarrow \quad (x_1, x_2) = (1, 1)$$
+
+Dan jika kita memilih $$(x_2 = 2)$$, maka:
+
+$$ x_1 = 2 - 2 = 0 \quad \Rightarrow \quad (x_1, x_2) = (0, 2)$$
+
+Dengan demikian, solusi dari sistem persamaan ini adalah semua pasangan $$((x_1, x_2))$$ yang memenuhi:
+
+$$ (x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} $$
 * 4. 
 $$
 \begin{array}{cc}
