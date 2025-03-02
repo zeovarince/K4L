@@ -34,7 +34,7 @@ $$ x_1 + 2x_2 + 3x_3 + 6 = x_1 + 2(2 - x_3) + 3x_3 = 6 \\ x_1+ 4 -2x_2 + 3x_3 = 
 
 Karna ada variabel bebas $$x_3 = t $$ Sehingga, solusi umum dari sistem persamaan tersebut adalah:
 
-$$\begin{aligned} x_1 &= 2-t, \\ x_2 &= 2-t, \ x_3 &= t, \quad t \in \mathbb{R}. \end{aligned}$$
+$$\begin{aligned} x_1 &= 2-t, \\ x_2 &= 2-t, \\ x_3 &= t, \quad t \in \mathbb{R}. \end{aligned}$$
 
 * 2. 
 $$
@@ -47,11 +47,12 @@ $$
 Penyelesaian : 
 
 
-* \begin{array}{ccc|c}
+$$\begin{array}{ccc|c}
 1 & 1 & 1 & 3 \\
 2 & 0 & 1 & 5 \\
 1 & 2 & 0 & 3
-\end{array}
+\end{array}$$
+
 Langkah 1: Eliminasi Baris Pertama
 Kita akan mengeliminasi elemen di bawah elemen pertama pada kolom pertama dengan mengurangi baris kedua dengan 2 kali baris pertama dan mengurangi baris ketiga dengan baris pertama.
 
