@@ -158,7 +158,7 @@ $$\begin{array}{cc} 2x_1 + 2x_2 = 4 \quad (1) \\ x_1 + x_2 = 2 \quad (2) \end{ar
 
 matriks augmented:
 
-$$\begin{bmatrix} 2 & 2 & | & 4 \ 1 & 1 & | & 2 \end{bmatrix}$$
+$$\begin{bmatrix} 2 & 2 & | & 4 \\ 1 & 1 & | & 2 \\end{bmatrix}$$
 
 Membuat elemen di bawah pivot menjadi nol. Kita dapat melakukannya dengan mengurangi baris pertama dengan dua kali baris kedua:
 
