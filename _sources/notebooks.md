@@ -171,7 +171,7 @@ $$ R_1: \quad 2 - 2 \cdot 1 = 0 \\ 2 - 2 \cdot 1 = 0 \\ 4 - 2 \cdot 2 = 0 $$
 
 Sehingga, matriks augmented menjadi:
 
-$$ \begin{bmatrix} 0 & 0 & | & 0 \\ 1 & 1 & | & 2 \\end{bmatrix} $$
+$$ \begin{bmatrix} 0 & 0 & | & 0 \\ 1 & 1 & | & 2 \end{bmatrix} $$
 
 Matriks ini menunjukkan bahwa kita memiliki satu persamaan yang valid dan satu persamaan yang identik (0 = 0). Dari baris kedua, kita dapat menuliskan persamaan:
 
