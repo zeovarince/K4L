@@ -165,11 +165,11 @@ Membuat elemen di bawah pivot menjadi nol. Kita dapat melakukannya dengan mengur
 
 $$ R_1 \leftarrow R_1 - 2R_2 $$
 
-Maka, kita lakukan:
+Maka:
 
 $$ R_1: \quad 2 - 2 \cdot 1 = 0 \\ 2 - 2 \cdot 1 = 0 \\ 4 - 2 \cdot 2 = 0 $$
 
-Sehingga, matriks augmented menjadi:
+Sehingga:
 
 $$ \begin{bmatrix} 0 & 0 & | & 0 \\ 1 & 1 & | & 2 \end{bmatrix} $$
 
