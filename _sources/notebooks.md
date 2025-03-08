@@ -183,7 +183,6 @@ x_2=\frac{1}{3} \\
 x_3=\frac{1}{3}
 \end{array}$$
 
-<iframe scrolling="no" title="AnalisisSensitivitas_P6_ProlinSem3" src="https://www.geogebra.org/material/iframe/id/arpq4yyj/width/1117/height/576/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="1117px" height="576px" style="border:0px;"> </iframe>
 
 #### Contoh 3. 
 $$
