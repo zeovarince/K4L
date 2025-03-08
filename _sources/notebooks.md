@@ -119,7 +119,7 @@ $$\begin{array}{ccc|c}
 \end{array}$$
 
 Langkah 3: Normalisasi Baris Ketiga
-Kita akan mengalikan baris ketiga dengan $\(-\frac{2}{3}\)$ untuk menjadikan elemen di baris ketiga, kolom ketiga menjadi 1:
+Kita akan mengalikan baris ketiga dengan $(-\frac{2}{3}\)$ untuk menjadikan elemen di baris ketiga, kolom ketiga menjadi 1:
 
 - Baris 3 → -2/3 dikali baris 3
 
