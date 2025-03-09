@@ -377,6 +377,12 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-skalar">7. Matriks Skalar</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmatika-matriks">Operasi Aritmatika Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-dan-pengurangan">1. Penjumlahan dan Pengurangan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian">2. Operasi Perkalian</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-skalar">3. Operasi Perkalian Skalar</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -468,38 +474,177 @@ $<span class="math notranslate nohighlight">\( A = \begin{bmatrix}
 <section id="matriks-skalar">
 <h3>7. Matriks Skalar<a class="headerlink" href="#matriks-skalar" title="Link to this heading">#</a></h3>
 <p>Matriks diagonal di mana semua elemen diagonal utamanya sama.</p>
-<p>Contoh Matriks Skalar :</p>
+<p>Contoh Matriks Skalar :
+$<span class="math notranslate nohighlight">\( S = \begin{bmatrix}k &amp; 0 &amp; 0 \\0 &amp; k &amp; 0 \\0 &amp; 0 &amp; k\end{bmatrix}\)</span>$</p>
+</section>
+</section>
+<section id="operasi-aritmatika-matriks">
+<h2>Operasi Aritmatika Matriks<a class="headerlink" href="#operasi-aritmatika-matriks" title="Link to this heading">#</a></h2>
+<section id="penjumlahan-dan-pengurangan">
+<h3>1. Penjumlahan dan Pengurangan<a class="headerlink" href="#penjumlahan-dan-pengurangan" title="Link to this heading">#</a></h3>
+<p>Operasi Penjumlahan dan Pengurangan hanya dapat dilakukan ketika jumlah Kedua Ordo matriks nya sama</p>
+<p>Contoh operasi Penjumlahan dan Pengurangan:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}S = \begin{bmatrix}k &amp; 0 &amp; 0 \\0 &amp; k &amp; 0 \\0 &amp; 0 &amp; k\end{bmatrix}\end{split}\]</div>
+\[\begin{split} A = \begin{bmatrix}1 &amp; 2 \\3 &amp; 4\end{bmatrix} B = \begin{bmatrix}5 &amp; 6 \\7 &amp; 8\end{bmatrix} \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} A + B = \begin{bmatrix}
+ 1 + 5 &amp; 2 + 6\\
+ 3 + 7 &amp; 4 + 8
+ \end{bmatrix} = \begin{bmatrix}
+ 6 &amp; 8 \\
+ 10 &amp; 12
+ \end{bmatrix} \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} A - B = \begin{bmatrix}
+ 1 - 5 &amp; 2 - 6 \\
+ 3 - 7 &amp; 4 - 8
+ \end{bmatrix} = \begin{bmatrix}
+ -4 &amp; -4 \\
+ -4 &amp; -4
+ \end{bmatrix}\end{split}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tukar</span><span class="p">(</span><span class="n">matriks</span><span class="p">):</span>
-    <span class="n">jumlahbaris</span><span class="o">=</span><span class="mi">4</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">jumlahbaris</span><span class="p">):</span>
-        <span class="n">matriks</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="n">matriks</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">jumlahbaris</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">return</span> <span class="n">matriks</span>
-<span class="k">def</span> <span class="nf">displaymat</span><span class="p">(</span><span class="n">matriks</span><span class="p">):</span>
-  <span class="n">jumlahkolom</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-  <span class="n">jumlahbaris</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks</span><span class="p">)</span>
-  <span class="n">temp</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
-  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">jumlahbaris</span><span class="p">):</span>
-    <span class="n">tempstr</span><span class="o">=</span><span class="s2">&quot; | &quot;</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">jumlahkolom</span><span class="p">):</span>
-      <span class="n">tempstr</span><span class="o">+=</span><span class="s2">&quot;</span><span class="si">%5d</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">matriks</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
-    <span class="n">temp</span><span class="o">+=</span><span class="n">tempstr</span><span class="o">+</span><span class="s2">&quot;| </span><span class="se">\n</span><span class="s2">&quot;</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-<span class="n">matriks</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
-<span class="n">hasil</span><span class="o">=</span><span class="n">tukar</span><span class="p">(</span><span class="n">matriks</span><span class="p">)</span>
-<span class="n">displaymat</span><span class="p">(</span><span class="n">hasil</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">D</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+    <span class="n">row_c</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">row_d</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="n">row_c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+        <span class="n">row_d</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+    <span class="n">C</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row_c</span><span class="p">)</span>
+    <span class="n">D</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row_d</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Penjumlahan A + B:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">C</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Hasil Pengurangan A - B:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">D</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> |     1    1    1    0| 
- |     1    1    1    0| 
- |     1    1    1    0| 
- |     1    1    1    0| 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Penjumlahan A + B:
+[6, 8]
+[10, 12]
+
+Hasil Pengurangan A - B:
+[-4, -4]
+[-4, -4]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="operasi-perkalian">
+<h3>2. Operasi Perkalian<a class="headerlink" href="#operasi-perkalian" title="Link to this heading">#</a></h3>
+<p>Konsep operasi perkalian pada matriks adalah 2 matriks dapat di selesaikan ketika kolom matriks pertama dan baris matriks kedua sama. Misal jika Matriks A adalah <span class="math notranslate nohighlight">\( m \times n \)</span> dan Matriks B adalah <span class="math notranslate nohighlight">\( n \times p \)</span> , maka perkalian matriks A dan B menghasilkan <span class="math notranslate nohighlight">\( m \times p \)</span></p>
+<p>Contoh Operasi Perkalian :
+$<span class="math notranslate nohighlight">\(A = \begin{bmatrix}
+1 &amp; 2 &amp; 3 \\
+4 &amp; 5 &amp; 6
+\end{bmatrix}_{2 \times 3} \quad
+B = \begin{bmatrix}
+7 &amp; 8 \\
+9 &amp; 10 \\
+11 &amp; 12
+\end{bmatrix}_{3 \times 2} \)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}C = A \cdot B = \begin{bmatrix}
+1 &amp; 2 &amp; 3 \\
+4 &amp; 5 &amp; 6
+\end{bmatrix} \cdot \begin{bmatrix}
+7 &amp; 8 \\
+9 &amp; 10 \\
+11 &amp; 12
+\end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}c_{11} = (1 \cdot 7) + (2 \cdot 9) + (3 \cdot 11) = 7 + 18 + 33 = 58\\
+c_{12} = (1 \cdot 8) + (2 \cdot 10) + (3 \cdot 12) = 8 + 20 + 36 = 64\\
+c_{21} = (4 \cdot 7) + (5 \cdot 9) + (6 \cdot 11) = 28 + 45 + 66 = 139\\
+c_{22} = (4 \cdot 8) + (5 \cdot 10) + (6 \cdot 12) = 32 + 50 + 72 = 154 \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}C = \begin{bmatrix}
+58 &amp; 64 \\
+139 &amp; 154
+\end{bmatrix}_{2 \times 2}\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]]</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+    <span class="n">row_c</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="n">hasil</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">hasil</span> <span class="o">+=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+        <span class="n">row_c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hasil</span><span class="p">)</span>
+    <span class="n">C</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row_c</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Perkalian A * B:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">C</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Perkalian A * B:
+[58, 64]
+[139, 154]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="operasi-perkalian-skalar">
+<h3>3. Operasi Perkalian Skalar<a class="headerlink" href="#operasi-perkalian-skalar" title="Link to this heading">#</a></h3>
+<p>Jika ( k ) adalah skalar dan ( A ) adalah matriks, maka hasil perkalian skalar ( kA ) adalah matriks baru yang diperoleh dengan mengalikan setiap elemen dari matriks ( A ) dengan skalar ( k )</p>
+<p>Contoh Perkalian Skalar:</p>
+<p>Misal : $<span class="math notranslate nohighlight">\( A = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \)</span>$</p>
+<p>Jika kita ingin mengalikan matriks ( A ) dengan skalar ( k = 3 ), maka hasilnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 3A = 3 \cdot \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} = \begin{bmatrix} 3 \cdot 1 &amp; 3 \cdot 2 \\ 3 \cdot 3 &amp; 3 \cdot 4 \end{bmatrix} = \begin{bmatrix} 3 &amp; 6 \\ 9 &amp; 12 \end{bmatrix}\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">C</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+    <span class="n">row</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="n">row</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+    <span class="n">C</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Perkalian Skalar k * A:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">C</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Perkalian Skalar k * A:
+[3, 6]
+[9, 12]
 </pre></div>
 </div>
 </div>
@@ -574,6 +719,12 @@ $<span class="math notranslate nohighlight">\( A = \begin{bmatrix}
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-identitas">5. Matriks Identitas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-diagonal">6. Matriks Diagonal</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-skalar">7. Matriks Skalar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmatika-matriks">Operasi Aritmatika Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-dan-pengurangan">1. Penjumlahan dan Pengurangan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian">2. Operasi Perkalian</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-skalar">3. Operasi Perkalian Skalar</a></li>
 </ul>
 </li>
 </ul>
