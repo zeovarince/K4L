@@ -183,6 +183,7 @@ x_2=\frac{1}{3} \\
 x_3=\frac{1}{3}
 \end{array}$$
 
+<iframe src="https://www.geogebra.org/classic/jmccwhfc?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 #### Contoh 3. 
 $$
