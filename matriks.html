@@ -385,6 +385,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-invers">5. Matriks Invers</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
 </ul>
             </nav>
         </div>
@@ -731,6 +732,137 @@ $<span class="math notranslate nohighlight">\(\text{det}(A) = (2)(4) - (3)(1) = 
 </ol>
 </section>
 </section>
+<section id="tugas">
+<h2>Tugas<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+-7x_1 - 6x_2 - 12x_3 &amp;= -33 \\
+5x_1 + 5x_2 + 7x_3 &amp;= 24 \\
+x_1 + 4x_3 &amp;= 5
+\end{aligned}\end{split}\]</div>
+<p>selesaikan matriks Invers dari persamaan diatas menggunakan operasi baris elementer</p>
+<p>Langkah 1: Menyusun Matriks Koefisien dan Matriks Sisi Kanan
+Sistem persamaan yang diberikan adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+-7x_1 - 6x_2 - 12x_3 &amp;= -33 \\
+5x_1 + 5x_2 + 7x_3 &amp;= 24 \\
+x_1 + 4x_3 &amp;= 5
+\end{aligned}\end{split}\]</div>
+<p>Matriks koefisien adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix}
+-7 &amp; -6 &amp; -12 \\
+5 &amp; 5 &amp; 7 \\
+1 &amp; 0 &amp; 4
+\end{bmatrix}\end{split}\]</div>
+<p>Matriks sisi kanan adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}B = \begin{bmatrix}
+-33 \\
+24 \\
+5
+\end{bmatrix}\end{split}\]</div>
+<p>Langkah 2: Membentuk Matriks Augmented
+Sekarang kita membentuk matriks augmented <span class="math notranslate nohighlight">\([A |I]\)</span>, di mana <span class="math notranslate nohighlight">\(I\)</span> adalah matriks identitas 3x3:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|ccc}
+-7 &amp; -6 &amp; -12 &amp; 1 &amp; 0 &amp; 0 \\
+5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right]\end{split}\]</div>
+<p>Langkah 3: Operasi Baris Elementer untuk Menyelesaikan Matriks Augmented</p>
+<p>Operasi Baris 1: Membuat Elemen Pivot (Posisi [1,1] menjadi 1)
+Pertama, kita ingin membuat elemen pertama di kolom pertama menjadi 1. Kita lakukan operasi baris elementer sebagai berikut:</p>
+<div class="math notranslate nohighlight">
+\[R_1 \rightarrow R_1 \times \left( -\frac{1}{7} \right)\]</div>
+<p>Hasilnya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|ccc}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right]\end{split}\]</div>
+<p>Operasi Baris 2 dan 3: Mengeliminasi Elemen Kolom 1
+Sekarang kita ingin membuat elemen-elemen di bawah pivot (posisi [2,1] dan [3,1]) menjadi 0. Untuk itu, kita lakukan:
+$<span class="math notranslate nohighlight">\(- R_2 \rightarrow R_2 - 5R_1\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(- R_3 \rightarrow R_3 - R_1\)</span>$</p>
+<p>Hasilnya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|ccc}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+0 &amp; \frac{23}{7} &amp; \frac{23}{7} &amp; \frac{5}{7} &amp; 1 &amp; 0 \\
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{array}\right]\end{split}\]</div>
+<p>Operasi Baris 2: Membuat Elemen Pivot [2,2] Menjadi 1
+Untuk membuat elemen di [2,2] menjadi 1, kita lakukan:</p>
+<div class="math notranslate nohighlight">
+\[R_2 \rightarrow R_2 \times \frac{7}{23}\]</div>
+<p>Hasilnya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|ccc}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; \frac{5}{23} &amp; \frac{7}{23} &amp; 0 \\
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{array}\right]\end{split}\]</div>
+<p>Operasi Baris 3: Mengeliminasi Elemen Kolom 2
+Sekarang kita ingin mengeliminasi elemen di bawah pivot [3,2]. Untuk itu, kita lakukan:</p>
+<div class="math notranslate nohighlight">
+\[R_3 \rightarrow R_3 + \frac{6}{7}R_2\]</div>
+<p>Hasilnya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|ccc}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; \frac{5}{23} &amp; \frac{7}{23} &amp; 0 \\
+0 &amp; 0 &amp; 4 &amp; \frac{29}{23} &amp; \frac{42}{23} &amp; 1
+\end{array}\right]\end{split}\]</div>
+<p>Operasi Baris 3: Membuat Elemen Pivot [3,3] Menjadi 1
+Untuk membuat elemen di [3,3] menjadi 1, kita lakukan:</p>
+<div class="math notranslate nohighlight">
+\[R_3 \rightarrow R_3 \times \frac{1}{4}\]</div>
+<p>Hasilnya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|ccc}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; \frac{5}{23} &amp; \frac{7}{23} &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; \frac{29}{92} &amp; \frac{42}{92} &amp; \frac{1}{4}
+\end{array}\right]\end{split}\]</div>
+<p>Operasi Baris 1 dan 2: Mengeliminasi Elemen di Atas Pivot [1,3] dan [2,3]
+Sekarang kita ingin mengeliminasi elemen-elemen di atas pivot [1,3] dan [2,3]. Untuk itu, kita lakukan:</p>
+<ul>
+<li><div class="math notranslate nohighlight">
+\[R_1 \rightarrow R_1 - \frac{12}{7}R_3\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[R_2 \rightarrow R_2 - R_3\]</div>
+</li>
+</ul>
+<p>Hasilnya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|ccc}
+1 &amp; 0 &amp; 0 &amp; -\frac{7}{92} &amp; -\frac{12}{92} &amp; -\frac{3}{14} \\
+0 &amp; 1 &amp; 0 &amp; \frac{9}{92} &amp; \frac{14}{92} &amp; -\frac{1}{4} \\
+0 &amp; 0 &amp; 1 &amp; \frac{29}{92} &amp; \frac{42}{92} &amp; \frac{1}{4}
+\end{array}\right]\end{split}\]</div>
+<p>Langkah 4: Matriks Solusi
+Matriks sisi kanan sekarang memberikansolusi untuk variabel <span class="math notranslate nohighlight">\(x_1, x_2, dan  x_3\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3
+\end{bmatrix}
+=
+\begin{bmatrix}
+-\frac{7}{92} \\
+\frac{9}{92} \\
+\frac{29}{92}
+\end{bmatrix}\end{split}\]</div>
+<p>Kesimpulan
+Solusi dari sistem persamaan linear tersebut adalah:</p>
+<div class="math notranslate nohighlight">
+\[ x_1 = -\frac{7}{92}, \quad x_2 = \frac{9}{92}, \quad x_3 = \frac{29}{92}\]</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -809,6 +941,7 @@ $<span class="math notranslate nohighlight">\(\text{det}(A) = (2)(4) - (3)(1) = 
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-invers">5. Matriks Invers</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
 </ul>
   </nav></div>
 
