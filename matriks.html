@@ -383,11 +383,11 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-skalar">3. Operasi Perkalian Skalar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks">4. Determinan Matriks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-matriks">Minor Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">3. Kofaktor Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-kofaktor">Contoh Kofaktor</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-dengan-konsep-minor-dan-kofaktor"><strong>Mencari Determinan dengan Konsep Minor dan Kofaktor</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">3. Kofaktor Matriks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-kofaktor">Contoh Kofaktor</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-dengan-konsep-minor-dan-kofaktor"><strong>Mencari Determinan dengan Konsep Minor dan Kofaktor</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-invers">5. Matriks Invers</a></li>
 </ul>
 </li>
@@ -683,9 +683,6 @@ c &amp; d
 \[ \text{det}(A) = (3)(4) - (5)(2) = 12 - 10 = 2\]</div>
 <p>###Metode Sarrus</p>
 <p>Metode Sarrus adalah salah satu cara yang digunakan untuk menghitung determinan dari matriks 3x3. Metode ini cukup sederhana dan mudah diingat. Berikut adalah langkah-langkah untuk menghitung determinan matriks 3x3 menggunakan metode Sarrus:</p>
-<p>\documentclass{article}
-\usepackage{amsmath}</p>
-<p>\begin{document}</p>
 <p>Misalkan kita memiliki matriks:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -765,15 +762,14 @@ D_2 = 225
 <div class="math notranslate nohighlight">
 \[\det(M_{11})=(5\times9)-(6\times8)=45-48=-3\]</div>
 </section>
-</section>
 <section id="kofaktor-matriks">
-<h2>3. Kofaktor Matriks<a class="headerlink" href="#kofaktor-matriks" title="Link to this heading">#</a></h2>
+<h3>3. Kofaktor Matriks<a class="headerlink" href="#kofaktor-matriks" title="Link to this heading">#</a></h3>
 <p>Kofaktor dari elemen <span class="math notranslate nohighlight">\(a_{ij}\)</span> dalam suatu matriks adalah minor dari elemen tersebut yang dikalikan dengan
 faktor tanda(-1) berpangkat <span class="math notranslate nohighlight">\(i+j:\)</span></p>
 <div class="math notranslate nohighlight">
 \[C_{ij}=(-1)^{i+j}M_{ij}\]</div>
 <section id="contoh-kofaktor">
-<h3>Contoh Kofaktor<a class="headerlink" href="#contoh-kofaktor" title="Link to this heading">#</a></h3>
+<h4>Contoh Kofaktor<a class="headerlink" href="#contoh-kofaktor" title="Link to this heading">#</a></h4>
 <p>Dari contoh sebelumnya, kofaktor elemen <span class="math notranslate nohighlight">\(a_{11}\)</span> adalah:</p>
 <div class="math notranslate nohighlight">
 \[C_{11}=(-1)^{1+1}\times(-3)=1\times(-3)=-3\]</div>
@@ -804,7 +800,7 @@ Contoh untuk Matriks 3:</p>
 <p>Jadi, minor dan kofaktor adalah komponen utama dalam perhitungan determinan, terutama untuk matriks berukuran lebih besar</p>
 </section>
 <section id="mencari-determinan-dengan-konsep-minor-dan-kofaktor">
-<h3><strong>Mencari Determinan dengan Konsep Minor dan Kofaktor</strong><a class="headerlink" href="#mencari-determinan-dengan-konsep-minor-dan-kofaktor" title="Link to this heading">#</a></h3>
+<h4><strong>Mencari Determinan dengan Konsep Minor dan Kofaktor</strong><a class="headerlink" href="#mencari-determinan-dengan-konsep-minor-dan-kofaktor" title="Link to this heading">#</a></h4>
 <p>Untuk menghitung determinan menggunakan konsep minor dan kofaktor, kita menggunakan ekspansi</p>
 <p>kofaktor, yaitu:</p>
 <div class="math notranslate nohighlight">
@@ -868,6 +864,7 @@ $<span class="math notranslate nohighlight">\(
 C = \begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\ 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 \\ 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \\ 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 \end{bmatrix}
 \)</span>$</p>
 <p>Gunakan ekspansi baris pertama dan ulangi proses perhitungan determinan 4×4.</p>
+</section>
 </section>
 <section id="matriks-invers">
 <h3>5. Matriks Invers<a class="headerlink" href="#matriks-invers" title="Link to this heading">#</a></h3>
@@ -1128,11 +1125,11 @@ x_3 &amp;= 2
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-skalar">3. Operasi Perkalian Skalar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks">4. Determinan Matriks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-matriks">Minor Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">3. Kofaktor Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-kofaktor">Contoh Kofaktor</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-dengan-konsep-minor-dan-kofaktor"><strong>Mencari Determinan dengan Konsep Minor dan Kofaktor</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">3. Kofaktor Matriks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-kofaktor">Contoh Kofaktor</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-dengan-konsep-minor-dan-kofaktor"><strong>Mencari Determinan dengan Konsep Minor dan Kofaktor</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-invers">5. Matriks Invers</a></li>
 </ul>
 </li>
