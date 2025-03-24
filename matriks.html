@@ -675,6 +675,118 @@ c &amp; d
 <p>Maka determinan dari matriks ( A ) adalah:</p>
 <div class="math notranslate nohighlight">
 \[ \text{det}(A) = (3)(4) - (5)(2) = 12 - 10 = 2\]</div>
+<p>###Metode Sarrus</p>
+<p>Metode Sarrus adalah salah satu cara yang digunakan untuk menghitung determinan dari matriks 3x3. Metode ini cukup sederhana dan mudah diingat. Berikut adalah langkah-langkah untuk menghitung determinan matriks 3x3 menggunakan metode Sarrus:</p>
+<p>\documentclass{article}
+\usepackage{amsmath}</p>
+<p>\begin{document}</p>
+<p>Misalkan kita memiliki matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{pmatrix}
+1 &amp; 2 &amp; 3 \\
+4 &amp; 5 &amp; 6 \\
+7 &amp; 8 &amp; 9
+\end{pmatrix}\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(\text{Langkah 1: Hitung Jumlah Diagonal Utama \(D_1\)}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+D_1 = a_{11} a_{22} a_{33} + a_{12} a_{23} a_{31} + a_{13} a_{21} a_{32}
+\]</div>
+<p>Substitusi nilai dari matriks (A):</p>
+<div class="math notranslate nohighlight">
+\[
+D_1 = 1 \cdot 5 \cdot 9 + 2 \cdot 6 \cdot 7 + 3 \cdot 4 \cdot 8
+\]</div>
+<p>Hitung setiap produk:</p>
+<div class="math notranslate nohighlight">
+\[
+D_1 = 45 + 84 + 96
+\]</div>
+<p>Sehingga:</p>
+<div class="math notranslate nohighlight">
+\[
+D_1 = 225
+\]</div>
+<p>\textbf{Langkah 2: Hitung Jumlah Diagonal Sekunder (D_2)}</p>
+<div class="math notranslate nohighlight">
+\[
+D_2 = a_{13} a_{22} a_{31} + a_{12} a_{21} a_{33} + a_{11} a_{23} a_{32}
+\]</div>
+<p>Substitusi nilai dari matriks (A):</p>
+<div class="math notranslate nohighlight">
+\[
+D_2 = 3 \cdot 5 \cdot 7 + 2 \cdot 4 \cdot 9 + 1 \cdot 6 \cdot 8
+\]</div>
+<p>Hitung setiap produk:</p>
+<div class="math notranslate nohighlight">
+\[
+D_2 = 105 + 72 + 48
+\]</div>
+<p>Sehingga:</p>
+<div class="math notranslate nohighlight">
+\[
+D_2 = 225
+\]</div>
+<p>\textbf{Langkah 3: Hitung Determinan}</p>
+<div class="math notranslate nohighlight">
+\[
+\text{det}(A) = D_1 - D_2
+\]</div>
+<p>Substitusi nilai (D_1) dan (D_2):</p>
+<div class="math notranslate nohighlight">
+\[
+\text{det}(A) = 225 - 225 = 0
+\]</div>
+<p>\textbf{Kesimpulan}</p>
+<p>Jadi, determinan dari matriks (A) adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{det}(A
+\]</div>
+<p>\documentclass{article}
+\usepackage{amsmath}</p>
+<p>\begin{document}</p>
+<p>\section*{Determinant, Minor, and Cofactor}</p>
+<p>\subsection*{1. Determinant}
+The determinant is a scalar value that can be computed from a square matrix. It provides important information about the matrix, such as whether it is invertible.</p>
+<p>\subsubsection*{For a <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrix}
+For a matrix
+[
+A = \begin{pmatrix} a &amp; b \ c &amp; d \end{pmatrix},
+]
+the determinant is calculated as:
+[
+\text{det}(A) = ad - bc.
+]</p>
+<p>\subsubsection*{For a <span class="math notranslate nohighlight">\(3 \times 3\)</span> matrix}
+For a matrix
+[
+A = \begin{pmatrix} a &amp; b &amp; c \ d &amp; e &amp; f \ g &amp; h &amp; i \end{pmatrix},
+]
+the determinant is calculated as:
+[
+\text{det}(A) = a(ei - fh) - b(di - fg) + c(dh - eg).
+]</p>
+<p>\subsection*{2. Minor}
+The minor of an element in a matrix is the determinant of the submatrix obtained by removing the row and column of that element.</p>
+<p>\subsubsection*{Example}
+Consider the matrix
+[
+A = \begin{pmatrix} 1 &amp; 2 &amp; 3 \ 4 &amp; 5 &amp; 6 \ 7 &amp; 8 &amp; 9 \end{pmatrix}.
+]
+The minor of the element ( a_{11} = 1 ) (first row, first column) is the determinant of the submatrix obtained by removing the first row and first column:
+[
+\text{Minor}(1) = \begin{pmatrix} 5 &amp; 6 \ 8 &amp; 9 \end{pmatrix} \Rightarrow \text{det} = (5 \cdot 9) - (6 \cdot 8) = 45 - 48 = -3.
+]</p>
+<p>\subsection*{3. Cofactor}
+The cofactor of an element in a matrix is the minor multiplied by ((-1)^{i+j}), where (i) is the row index and (j) is the column index of the element.</p>
+<p>\subsubsection*{Example}
+Using the previous matrix ( A ), the cofactor of the element ( a_{11} = 1 ) is:
+[
+\text{Cofactor}(1) = (-1)^{1+1} \cdot \text{Minor}(1) = 1 \cdot (-3) = -3.
+]</p>
+<p>\end{document}</p>
 </section>
 <section id="matriks-invers">
 <h3>5. Matriks Invers<a class="headerlink" href="#matriks-invers" title="Link to this heading">#</a></h3>
@@ -858,7 +970,7 @@ x_1 &amp;= -3 \\
 x_2 &amp;= 5 \\
 x_3 &amp;= 2
 \end{aligned}\)</span></p>
-<iframe src="https://www.geogebra.org/classic/jmccwhfc?embed" width="700" height="500" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe></section>
+<iframe src="https://www.geogebra.org/classic/jmccwhfc?embed" width="600" height="400" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe></section>
 </section>
 
     <script type="text/x-thebe-config">
