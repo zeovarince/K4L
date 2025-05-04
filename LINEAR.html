@@ -174,7 +174,6 @@
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Penyelesaian sistem persamaan linear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matriks.html">Matriks</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Transformasi Linear</a></li>
-
 </ul>
 
     </div>
@@ -367,7 +366,6 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Transformasi Linear</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-transformasi-linear">Sifat-sifat Transformasi Linear</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additivitas-penjumlahan-vektor">1. Additivitas (penjumlahan vektor):</a></li>
@@ -378,18 +376,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-homogenitas-skalar-perkalian-dengan-skalar">Contoh Homogenitas skalar (perkalian dengan skalar):</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#t-mathbf-v-begin-bmatrix-cos-theta-sin-theta-sin-theta-cos-theta-end-bmatrix-begin-bmatrix-r-cos-alpha-r-sin-alpha-end-bmatrix"><span class="math notranslate nohighlight">\(T(\mathbf{v}) =
-\begin{bmatrix}
-\cos \theta &amp; -\sin \theta \\
-\sin \theta &amp; \cos \theta
-\end{bmatrix}
-\begin{bmatrix}
-r \cos \alpha \\
-r \sin \alpha
-\end{bmatrix}\)</span></a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -513,10 +499,8 @@ Langkah 1: Representasi Vektor dalam Koordinat Polar</p>
 \[\mathbf{v} = (x, y) = (r \cos \alpha, r \sin \alpha)\]</div>
 <p>Langkah 2: Kalikan Matriks Rotasi dengan Vektor</p>
 <p>Terapkan transformasi <span class="math notranslate nohighlight">\((T(\mathbf{v}) = A \mathbf{v}):\)</span></p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="t-mathbf-v-begin-bmatrix-cos-theta-sin-theta-sin-theta-cos-theta-end-bmatrix-begin-bmatrix-r-cos-alpha-r-sin-alpha-end-bmatrix">
-<h1><span class="math notranslate nohighlight">\(T(\mathbf{v}) =
+<div class="math notranslate nohighlight">
+\[\begin{split}T(\mathbf{v}) =
 \begin{bmatrix}
 \cos \theta &amp; -\sin \theta \\
 \sin \theta &amp; \cos \theta
@@ -524,11 +508,12 @@ Langkah 1: Representasi Vektor dalam Koordinat Polar</p>
 \begin{bmatrix}
 r \cos \alpha \\
 r \sin \alpha
-\end{bmatrix}\)</span><a class="headerlink" href="#t-mathbf-v-begin-bmatrix-cos-theta-sin-theta-sin-theta-cos-theta-end-bmatrix-begin-bmatrix-r-cos-alpha-r-sin-alpha-end-bmatrix" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+\end{bmatrix}
+=
+\begin{bmatrix}
 r \cos \theta \cos \alpha - r \sin \theta \sin \alpha \\
 r \sin \theta \cos \alpha + r \cos \theta \sin \alpha
-\end{bmatrix}\)</span></p>
+\end{bmatrix}\end{split}\]</div>
 <p>Gunakan identitas trigonometri:</p>
 <div class="math notranslate nohighlight">
 \[\cos(\alpha + \theta) = \cos \alpha \cos \theta - \sin \alpha \sin \theta\]</div>
@@ -546,6 +531,7 @@ r \sin(\alpha + \theta)
 Artinya, transformasi ini memutar vektor <span class="math notranslate nohighlight">\((\mathbf{v})\)</span> sebesar sudut <span class="math notranslate nohighlight">\((\theta)\)</span> berlawanan arah jarum jam.</p>
 <div class="math notranslate nohighlight">
 \[T(\mathbf{v}) = A \mathbf{v} \text{ adalah rotasi sebesar } \theta \text{ terhadap titik asal}\]</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -604,7 +590,6 @@ Artinya, transformasi ini memutar vektor <span class="math notranslate nohighlig
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Transformasi Linear</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-transformasi-linear">Sifat-sifat Transformasi Linear</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additivitas-penjumlahan-vektor">1. Additivitas (penjumlahan vektor):</a></li>
@@ -615,18 +600,6 @@ Artinya, transformasi ini memutar vektor <span class="math notranslate nohighlig
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-homogenitas-skalar-perkalian-dengan-skalar">Contoh Homogenitas skalar (perkalian dengan skalar):</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#t-mathbf-v-begin-bmatrix-cos-theta-sin-theta-sin-theta-cos-theta-end-bmatrix-begin-bmatrix-r-cos-alpha-r-sin-alpha-end-bmatrix"><span class="math notranslate nohighlight">\(T(\mathbf{v}) =
-\begin{bmatrix}
-\cos \theta &amp; -\sin \theta \\
-\sin \theta &amp; \cos \theta
-\end{bmatrix}
-\begin{bmatrix}
-r \cos \alpha \\
-r \sin \alpha
-\end{bmatrix}\)</span></a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
