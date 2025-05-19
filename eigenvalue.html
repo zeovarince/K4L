@@ -393,23 +393,149 @@
 <h2>Definisi Eigen Values<a class="headerlink" href="#definisi-eigen-values" title="Link to this heading">#</a></h2>
 <p><em>Eigen Value</em>
 Eigenvalue atau nilai eigen adalah konsep matematika yang digunakan dalam aljabar linear. Eigenvalue adalah bilangan skalar yang terkait dengan sebuah matriks persegi. Eigenvalue digunakan untuk mempelajari sifat-sifat matriks, seperti kestabilan sistem dinamis, analisis jaringan, dan analisis data.</p>
+<p>Rumus:
+$<span class="math notranslate nohighlight">\(\det(A - \lambda I) = 0\)</span>$</p>
+<p>Penjelasan:</p>
+<p>𝐴: matriks persegi (n x n)</p>
+<p>𝜆: nilai eigen</p>
+<p>𝐼: matriks identitas berukuran sama dengan 𝐴</p>
+<p>det: determinan</p>
 </section>
 <section id="mencari-eigen-values">
 <h2>Mencari Eigen Values<a class="headerlink" href="#mencari-eigen-values" title="Link to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\begin{split}\[
+<p>Carilah Eigen Values dibawah ini dengan polinomal karakteristik:
+$<span class="math notranslate nohighlight">\(
 A = \begin{bmatrix}
-2 &amp; 4 \\
-3 &amp; 3
+3 &amp; 0 \\
+0 &amp; 3
 \end{bmatrix}
-\]\end{split}\]</div>
+\)</span>$</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\[
-a_{12} = \begin{bmatrix}
-2 &amp; 4 \\
-3 &amp; 3
+\[\begin{split}
+B = \begin{bmatrix}
+-2 &amp; 0 \\
+0 &amp; 4
 \end{bmatrix}
-\]\end{split}\]</div>
+\end{split}\]</div>
+<p>Jawab:</p>
+<p>Diberikan matriks:
+$<span class="math notranslate nohighlight">\(
+A = \begin{bmatrix}
+3 &amp; 0 \\
+0 &amp; 3
+\end{bmatrix}
+, \quad
+B = \begin{bmatrix}
+-2 &amp; 0 \\
+0 &amp; 4
+\end{bmatrix}
+\)</span>$</p>
+<p>Eigenvalues Matriks <span class="math notranslate nohighlight">\( A \)</span></p>
+<p>Kita cari <span class="math notranslate nohighlight">\(\lambda\)</span> yang memenuhi:
+$<span class="math notranslate nohighlight">\(
+\det(A - \lambda I) = 0
+\)</span>$</p>
+<p>Dengan matriks identitas
+$<span class="math notranslate nohighlight">\(
+I = \begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}
+\)</span>$</p>
+<p>Maka,
+$<span class="math notranslate nohighlight">\(
+A - \lambda I = \begin{bmatrix}
+3 - \lambda &amp; 0 \\
+0 &amp; 3 - \lambda
+\end{bmatrix}
+\)</span>$</p>
+<p>Determinannya:
+$<span class="math notranslate nohighlight">\(
+\det(A - \lambda I) = (3 - \lambda)(3 - \lambda) = (3 - \lambda)^2
+\)</span>$</p>
+<p>Persamaan karakteristik:
+$<span class="math notranslate nohighlight">\(
+(3 - \lambda)^2 = 0 \implies \lambda = 3
+\)</span>$</p>
+<p>Jadi, nilai eigen dari <span class="math notranslate nohighlight">\( A \)</span> adalah:
+$<span class="math notranslate nohighlight">\(
+\boxed{ \lambda_1 = 3, \quad \lambda_2 = 3 }
+\)</span>$</p>
+<p>Eigenvalues Matriks <span class="math notranslate nohighlight">\( B \)</span></p>
+<p>Cari <span class="math notranslate nohighlight">\(\lambda\)</span> yang memenuhi:</p>
+<div class="math notranslate nohighlight">
+\[
+\det(B - \lambda I) = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B - \lambda I = \begin{bmatrix}
+-2 - \lambda &amp; 0 \\
+0 &amp; 4 - \lambda
+\end{bmatrix}
+\end{split}\]</div>
+<p>Determinannya:
+$<span class="math notranslate nohighlight">\(
+\det(B - \lambda I) = (-2 - \lambda)(4 - \lambda)
+\)</span>$</p>
+<p>Persamaan karakteristik:
+$<span class="math notranslate nohighlight">\(
+(-2 - \lambda)(4 - \lambda) = 0
+\)</span>$</p>
+<p>Sehingga,
+$<span class="math notranslate nohighlight">\(
+\lambda_1 = -2, \quad \lambda_2 = 4
+\)</span>$</p>
+<p>Urutan Eigenvalues dari yang terbesar ke terkecil</p>
+<p>Gabungkan semua nilai eigen:
+$<span class="math notranslate nohighlight">\(
+\{3, 3, -2, 4\}
+\)</span>$</p>
+<p>Diurutkan menjadi:
+$<span class="math notranslate nohighlight">\(
+\boxed{
+4, \quad 3, \quad 3, \quad -2
+}
+\)</span>$</p>
+<p>Urutkan Eigen Values(yang paling besar di depan)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Definisikan matriks A dan B</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+
+<span class="c1"># Hitung nilai eigen untuk matriks A</span>
+<span class="n">eigenvalues_A</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># Hitung nilai eigen untuk matriks B</span>
+<span class="n">eigenvalues_B</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># Gabungkan semua nilai eigen</span>
+<span class="n">all_eigenvalues</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">eigenvalues_A</span><span class="p">,</span> <span class="n">eigenvalues_B</span><span class="p">))</span>
+
+<span class="c1"># Urutkan nilai eigen dari yang terbesar ke yang terkecil</span>
+<span class="n">sorted_eigenvalues</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">all_eigenvalues</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Tampilkan hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nilai eigen dari matriks A:&quot;</span><span class="p">,</span> <span class="n">eigenvalues_A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nilai eigen dari matriks B:&quot;</span><span class="p">,</span> <span class="n">eigenvalues_B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Urutan nilai eigen (dari yang terbesar ke terkecil):&quot;</span><span class="p">,</span> <span class="n">sorted_eigenvalues</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nilai eigen dari matriks A: [3. 3.]
+Nilai eigen dari matriks B: [-2.  4.]
+Urutan nilai eigen (dari yang terbesar ke terkecil): [ 4.  3.  3. -2.]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
