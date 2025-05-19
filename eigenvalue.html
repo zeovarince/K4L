@@ -393,8 +393,9 @@
 <h2>Definisi Eigen Values<a class="headerlink" href="#definisi-eigen-values" title="Link to this heading">#</a></h2>
 <p><em>Eigen Value</em>
 Eigenvalue atau nilai eigen adalah konsep matematika yang digunakan dalam aljabar linear. Eigenvalue adalah bilangan skalar yang terkait dengan sebuah matriks persegi. Eigenvalue digunakan untuk mempelajari sifat-sifat matriks, seperti kestabilan sistem dinamis, analisis jaringan, dan analisis data.</p>
-<p>Rumus:
-$<span class="math notranslate nohighlight">\(\det(A - \lambda I) = 0\)</span>$</p>
+<p>Rumus:</p>
+<div class="math notranslate nohighlight">
+\[ \det(A - \lambda I) = 0 \]</div>
 <p>Penjelasan:</p>
 <p>𝐴: matriks persegi (n x n)</p>
 <p>𝜆: nilai eigen</p>
@@ -403,24 +404,21 @@ $<span class="math notranslate nohighlight">\(\det(A - \lambda I) = 0\)</span>$<
 </section>
 <section id="mencari-eigen-values">
 <h2>Mencari Eigen Values<a class="headerlink" href="#mencari-eigen-values" title="Link to this heading">#</a></h2>
-<p>Carilah Eigen Values dibawah ini dengan polinomal karakteristik:
-$<span class="math notranslate nohighlight">\(
-A = \begin{bmatrix}
+<p>Carilah Eigen Values dibawah ini dengan polinomal karakteristik:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix}
 3 &amp; 0 \\
 0 &amp; 3
-\end{bmatrix}
-\)</span>$</p>
+\end{bmatrix}\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-B = \begin{bmatrix}
+\[\begin{split}B = \begin{bmatrix}
 -2 &amp; 0 \\
 0 &amp; 4
-\end{bmatrix}
-\end{split}\]</div>
+\end{bmatrix}\end{split}\]</div>
 <p>Jawab:</p>
-<p>Diberikan matriks:
-$<span class="math notranslate nohighlight">\(
-A = \begin{bmatrix}
+<p>Diberikan matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix}
 3 &amp; 0 \\
 0 &amp; 3
 \end{bmatrix}
@@ -428,76 +426,57 @@ A = \begin{bmatrix}
 B = \begin{bmatrix}
 -2 &amp; 0 \\
 0 &amp; 4
-\end{bmatrix}
-\)</span>$</p>
-<p>Eigenvalues Matriks <span class="math notranslate nohighlight">\( A \)</span></p>
-<p>Kita cari <span class="math notranslate nohighlight">\(\lambda\)</span> yang memenuhi:
-$<span class="math notranslate nohighlight">\(
-\det(A - \lambda I) = 0
-\)</span>$</p>
-<p>Dengan matriks identitas
-$<span class="math notranslate nohighlight">\(
-I = \begin{bmatrix}
+\end{bmatrix}\end{split}\]</div>
+<p>Eigenvalues Matriks A</p>
+<p>Kita cari <span class="math notranslate nohighlight">\(\lambda\)</span> yang memenuhi:</p>
+<div class="math notranslate nohighlight">
+\[\det(A - \lambda I) = 0\]</div>
+<p>Dengan matriks identitas</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}I = \begin{bmatrix}
 1 &amp; 0 \\
 0 &amp; 1
-\end{bmatrix}
-\)</span>$</p>
-<p>Maka,
-$<span class="math notranslate nohighlight">\(
-A - \lambda I = \begin{bmatrix}
+\end{bmatrix}\end{split}\]</div>
+<p>Maka,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A - \lambda I = \begin{bmatrix}
 3 - \lambda &amp; 0 \\
 0 &amp; 3 - \lambda
-\end{bmatrix}
-\)</span>$</p>
-<p>Determinannya:
-$<span class="math notranslate nohighlight">\(
-\det(A - \lambda I) = (3 - \lambda)(3 - \lambda) = (3 - \lambda)^2
-\)</span>$</p>
-<p>Persamaan karakteristik:
-$<span class="math notranslate nohighlight">\(
-(3 - \lambda)^2 = 0 \implies \lambda = 3
-\)</span>$</p>
-<p>Jadi, nilai eigen dari <span class="math notranslate nohighlight">\( A \)</span> adalah:
-$<span class="math notranslate nohighlight">\(
-\boxed{ \lambda_1 = 3, \quad \lambda_2 = 3 }
-\)</span>$</p>
-<p>Eigenvalues Matriks <span class="math notranslate nohighlight">\( B \)</span></p>
+\end{bmatrix}\end{split}\]</div>
+<p>Determinannya:</p>
+<div class="math notranslate nohighlight">
+\[\det(A - \lambda I) = (3 - \lambda)(3 - \lambda) = (3 - \lambda)^2\]</div>
+<p>Persamaan karakteristik:</p>
+<div class="math notranslate nohighlight">
+\[(3 - \lambda)^2 = 0 \implies \lambda = 3\]</div>
+<p>Jadi, nilai eigen dari A adalah:</p>
+<div class="math notranslate nohighlight">
+\[\boxed{ \lambda_1 = 3, \quad \lambda_2 = 3 }\]</div>
+<p>Eigenvalues Matriks B</p>
 <p>Cari <span class="math notranslate nohighlight">\(\lambda\)</span> yang memenuhi:</p>
 <div class="math notranslate nohighlight">
-\[
-\det(B - \lambda I) = 0
-\]</div>
+\[\det(B - \lambda I) = 0\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-B - \lambda I = \begin{bmatrix}
+\[\begin{split}B - \lambda I = \begin{bmatrix}
 -2 - \lambda &amp; 0 \\
 0 &amp; 4 - \lambda
-\end{bmatrix}
-\end{split}\]</div>
-<p>Determinannya:
-$<span class="math notranslate nohighlight">\(
-\det(B - \lambda I) = (-2 - \lambda)(4 - \lambda)
-\)</span>$</p>
+\end{bmatrix}\end{split}\]</div>
+<p>Determinannya:</p>
+<div class="math notranslate nohighlight">
+\[\det(B - \lambda I) = (-2 - \lambda)(4 - \lambda)\]</div>
 <p>Persamaan karakteristik:
-$<span class="math notranslate nohighlight">\(
-(-2 - \lambda)(4 - \lambda) = 0
-\)</span>$</p>
-<p>Sehingga,
-$<span class="math notranslate nohighlight">\(
-\lambda_1 = -2, \quad \lambda_2 = 4
-\)</span>$</p>
+$<span class="math notranslate nohighlight">\((-2 - \lambda)(4 - \lambda) = 0\)</span>$</p>
+<p>Sehingga,</p>
+<div class="math notranslate nohighlight">
+\[\lambda_1 = -2, \quad \lambda_2 = 4\]</div>
 <p>Urutan Eigenvalues dari yang terbesar ke terkecil</p>
-<p>Gabungkan semua nilai eigen:
-$<span class="math notranslate nohighlight">\(
-\{3, 3, -2, 4\}
-\)</span>$</p>
+<p>Gabungkan semua nilai eigen:</p>
+<div class="math notranslate nohighlight">
+\[\{3, 3, -2, 4\}\]</div>
 <p>Diurutkan menjadi:
-$<span class="math notranslate nohighlight">\(
-\boxed{
+$<span class="math notranslate nohighlight">\(\boxed{
 4, \quad 3, \quad 3, \quad -2
-}
-\)</span>$</p>
-<p>Urutkan Eigen Values(yang paling besar di depan)</p>
+}\)</span>$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
