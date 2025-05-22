@@ -60,6 +60,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'eigenvek';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -373,6 +375,7 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigen-vektor">Definisi Eigen Vektor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigen-vektor">Mencari Eigen Vektor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keterkaitan-antara-eigenvalue-dan-eigenvector">Keterkaitan antara Eigenvalue dan Eigenvector</a></li>
 </ul>
             </nav>
         </div>
@@ -389,9 +392,229 @@
 <section id="definisi-eigen-vektor">
 <h2>Definisi Eigen Vektor<a class="headerlink" href="#definisi-eigen-vektor" title="Link to this heading">#</a></h2>
 <p><em>Definisi Eigen Vektor</em></p>
+<p>Eigenvector atau vektor eigen adalah vektor yang tidak berubah arah ketika diberikan transformasi linear. Dalam matematika, eigenvector sering digunakan dalam perhitungan matriks dan analisis spektral. Eigenvector juga dapat digunakan untuk memodelkan sistem dinamis dan mengidentifikasi pola dalam data. dapat dilihat dengan persamaan dibawah ini:</p>
+<div class="math notranslate nohighlight">
+\[
+A \mathbf{v} = \lambda \mathbf{v}
+\]</div>
+<p>Di mana:</p>
+<p>A adalah matriks berukuran n × n.</p>
+<p>v adalah vektor eigen yang ingin kita temukan.</p>
+<p>λ adalah nilai eigen yang terkait dengan vektor eigen v.</p>
 </section>
 <section id="mencari-eigen-vektor">
 <h2>Mencari Eigen Vektor<a class="headerlink" href="#mencari-eigen-vektor" title="Link to this heading">#</a></h2>
+<p>Carilah Eigen Vektor dibawah ini dengan polinomal karakteristik:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix}
+3 &amp; 0 \\
+0 &amp; 3
+\end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}B = \begin{bmatrix}
+-2 &amp; 0 \\
+0 &amp; 4
+\end{bmatrix}\end{split}\]</div>
+<p>jawab:</p>
+<p>Vektor Eigen Matriks <span class="math notranslate nohighlight">\( A \)</span></p>
+<p>Dari perhitungan sebelumnya, kita mendapatkan nilai eigen dari <span class="math notranslate nohighlight">\( A \)</span>:
+<span class="math notranslate nohighlight">\(
+\lambda = 3 \quad (\text{dengan multiplicity 2})
+\)</span></p>
+<p>Untuk mencari vektor eigen, kita perlu menyelesaikan persamaan:
+<span class="math notranslate nohighlight">\(
+(A - \lambda I) \mathbf{v} = 0
+\)</span></p>
+<p>Dengan <span class="math notranslate nohighlight">\( \lambda = 3 \)</span>:
+<span class="math notranslate nohighlight">\(
+A - 3I = \begin{bmatrix}
+3 - 3 &amp; 0 \\
+0 &amp; 3 - 3
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; 0 \\
+0 &amp; 0
+\end{bmatrix}
+\)</span></p>
+<p>Persamaan ini menjadi:
+<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+0 &amp; 0 \\
+0 &amp; 0
+\end{bmatrix} \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix}
+\)</span></p>
+<p>Ini menunjukkan bahwa setiap vektor dalam bentuk:
+<span class="math notranslate nohighlight">\(
+\mathbf{v} = \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} = \begin{bmatrix}
+1 \\
+0
+\end{bmatrix} \text{ dan } \begin{bmatrix}
+0 \\
+1
+\end{bmatrix}
+\)</span>
+adalah vektor eigen yang sesuai dengan nilai eigen <span class="math notranslate nohighlight">\( \lambda = 3 \)</span>.</p>
+<p>Jadi, vektor eigen untuk matriks <span class="math notranslate nohighlight">\( A \)</span> adalah:
+<span class="math notranslate nohighlight">\(
+\boxed{
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}, \quad
+\begin{bmatrix}
+0 \\
+1
+\end{bmatrix}
+}
+\)</span></p>
+<p>\subsection*{Vektor Eigen Matriks <span class="math notranslate nohighlight">\( B \)</span>}</p>
+<p>Dari perhitungan sebelumnya, kita mendapatkan nilai eigen dari <span class="math notranslate nohighlight">\( B \)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\lambda_1 = -2, \quad \lambda_2 = 4\]</div>
+<p>\textbf{Untuk } <span class="math notranslate nohighlight">\( \lambda_1 = -2 \)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}B - (-2)I = B + 2I = \begin{bmatrix}
+-2 + 2 &amp; 0 \\
+0 &amp; 4 + 2
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; 0 \\
+0 &amp; 6
+\end{bmatrix}\end{split}\]</div>
+<p>Persamaan ini menjadi:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}\begin{bmatrix}
+0 &amp; 0 \\
+0 &amp; 6
+\end{bmatrix} \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix}$\end{split}\\Ini menunjukkan bahwa setiap vektor dalam bentuk:\\\begin{split}$$\mathbf{v} = \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} = \begin{bmatrix}
+1 \\
+0
+\end{bmatrix}\end{split}\end{aligned}\end{align} \]</div>
+<p>adalah vektor eigen yang sesuai dengan nilai eigen <span class="math notranslate nohighlight">\( \lambda_1 = -2 \)</span>.</p>
+<p>Jadi, vektor eigen untuk <span class="math notranslate nohighlight">\( \lambda_1 = -2 \)</span> adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\boxed{
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
+}\end{split}\]</div>
+<p>\textbf{Untuk } <span class="math notranslate nohighlight">\( \lambda_2 = 4 \)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}B - 4I = \begin{bmatrix}
+-2 - 4 &amp; 0 \\
+0 &amp; 4 - 4
+\end{bmatrix} = \begin{bmatrix}
+-6 &amp; 0 \\
+0 &amp; 0
+\end{bmatrix}\end{split}\]</div>
+<p>Persamaan ini menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+-6 &amp; 0 \\
+0 &amp; 0
+\end{bmatrix} \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>Ini menunjukkan bahwa setiap vektor dalam bentuk:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{v} = \begin{bmatrix}
+0 \\
+x_2
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+1
+\end{bmatrix}\end{split}\]</div>
+<p>adalah vektor eigen yang sesuai dengan nilai eigen <span class="math notranslate nohighlight">\( \lambda_2 = 4 \)</span>.</p>
+<p>Jadi, vektor eigen untuk <span class="math notranslate nohighlight">\( \lambda_2 = 4 \)</span> adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+0 \\
+1
+\end{bmatrix}\end{split}\]</div>
+<p>Kesimpulan</p>
+<p>Vektor eigen untuk matriks <span class="math notranslate nohighlight">\( A \)</span> dan <span class="math notranslate nohighlight">\( B \)</span> adalah:
+$<span class="math notranslate nohighlight">\(
+\text{Matriks } A: \quad \begin{bmatrix}
+1 \\
+0
+\end{bmatrix}, \quad \begin{bmatrix}
+0 \\
+1
+\end{bmatrix}\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{Matriks } B: \quad \begin{bmatrix}
+1 \\
+0
+\end{bmatrix}, \quad \begin{bmatrix}
+0 \\
+1
+\end{bmatrix}\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Definisikan matriks A dan B</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+
+<span class="c1"># Hitung nilai eigen dan vektor eigen matriks A</span>
+<span class="n">eigenvalues_A</span><span class="p">,</span> <span class="n">eigenvectors_A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nilai eigen matriks A:&quot;</span><span class="p">,</span> <span class="n">eigenvalues_A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vektor eigen matriks A:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors_A</span><span class="p">)</span>
+
+<span class="c1"># Hitung nilai eigen dan vektor eigen matriks B</span>
+<span class="n">eigenvalues_B</span><span class="p">,</span> <span class="n">eigenvectors_B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Nilai eigen matriks B:&quot;</span><span class="p">,</span> <span class="n">eigenvalues_B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vektor eigen matriks B:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors_B</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nilai eigen matriks A: [3. 3.]
+Vektor eigen matriks A:
+[[1. 0.]
+ [0. 1.]]
+
+Nilai eigen matriks B: [-2.  4.]
+Vektor eigen matriks B:
+[[1. 0.]
+ [0. 1.]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="keterkaitan-antara-eigenvalue-dan-eigenvector">
+<h2>Keterkaitan antara Eigenvalue dan Eigenvector<a class="headerlink" href="#keterkaitan-antara-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
+<p>Dari matriks A dan B yang diberikan kita dapat menyimpulkan keterkaitan antara eigenvalues dan eigenvektor salah satunya adalah hubungan matematis yang dimana Setiap nilai eigen λ memiliki vektor eigen v yang terkait. Ketika kita menemukan nilai eigen dari matriks, kita dapat menggunakan nilai tersebut untuk menemukan vektor eigen yang sesuai. Dalam konteks matriks A dan B:</p>
+<p>Untuk matriks A, kita menemukan nilai eigen λ = 3 dengan multiplicity 2. Vektor eigen yang terkait adalah [1 0] dan [0 1], yang menunjukkan bahwa setiap vektor dalam ruang vektor dua dimensi akan tetap berada di sepanjang sumbu yang sama setelah transformasi oleh matriks A.</p>
+<p>Untuk matriks B, kita menemukan dua nilai eigen: λ₁ = –2 dan λ₂ = 4. Vektor eigen yang terkait dengan λ₁ adalah [1 0] dan untuk λ₂ adalah [0 1]. Ini menunjukkan bahwa vektor eigen untuk λ₁ akan dibalik arah (karena negatif) dan vektor eigen untuk λ₂ akan diperbesar.</p>
 </section>
 </section>
 
@@ -453,6 +676,7 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigen-vektor">Definisi Eigen Vektor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigen-vektor">Mencari Eigen Vektor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keterkaitan-antara-eigenvalue-dan-eigenvector">Keterkaitan antara Eigenvalue dan Eigenvector</a></li>
 </ul>
   </nav></div>
 
