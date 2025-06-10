@@ -373,12 +373,14 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-cross-product">Definisi Cross Product</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-program-mencari-cross-product">Code Program Mencari Cross Product</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-determinan-untuk-menemukan-perkalian-silang">Menggunakan determinan untuk menemukan perkalian silang</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-cross-product-menggunakan-determinan">Rumus Cross Product menggunakan Determinan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-menghitung">Cara Menghitung:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh:</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-program-menggunakan-determinan-untuk-menemukan-perkalian-silang">Code program Menggunakan determinan untuk menemukan perkalian silang</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-perkalian-silang">Sifat-sifat Perkalian Silang</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#antikomutatif">1. Antikomutatif</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-vektor-tegak-lurus">2. Hasil Vektor Tegak Lurus</a></li>
@@ -389,7 +391,6 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-product-vektor-dengan-dirinya-sendiri">7. Cross Product Vektor dengan Dirinya Sendiri</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-program-mencari-cross-product">Code Program Mencari Cross Product</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-pada-luas-jajaran-genjang">Implementasi Pada Luas Jajaran Genjang</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-dasar">Konsep Dasar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajar-genjang-besar-cross-product">Luas Jajar Genjang = Besar Cross Product</a></li>
@@ -494,6 +495,9 @@ v_1 u_2 - v_2 u_1
 \[\begin{split}
 \vec{v} \times \vec{u} = \begin{bmatrix} 13 \\ -2 \\ -7 \end{bmatrix}
 \end{split}\]</div>
+</section>
+<section id="code-program-mencari-cross-product">
+<h2>Code Program Mencari Cross Product<a class="headerlink" href="#code-program-mencari-cross-product" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -560,6 +564,50 @@ b_1 &amp; b_2 &amp; b_3
 <div class="math notranslate nohighlight">
 \[\vec{A} \times \vec{B} = -3\hat{i} + 6\hat{j} - 3\hat{k} = \langle -3, 6, -3 \rangle\]</div>
 </section>
+</section>
+<section id="code-program-menggunakan-determinan-untuk-menemukan-perkalian-silang">
+<h2>Code program Menggunakan determinan untuk menemukan perkalian silang<a class="headerlink" href="#code-program-menggunakan-determinan-untuk-menemukan-perkalian-silang" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">cross_product</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">):</span>
+    <span class="c1"># Membuat matriks 3x3 dengan baris pertama sebagai vektor satuan i, j, k</span>
+    <span class="c1"># dan baris kedua dan ketiga adalah vektor v1 dan v2</span>
+    <span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">],</span>  <span class="c1"># i</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">],</span>  <span class="c1"># j</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span><span class="p">]</span>   <span class="c1"># k</span>
+    <span class="p">])</span>
+    
+    <span class="c1"># Hitung determinan secara manual dengan ekspansi kofaktor</span>
+    <span class="n">i_comp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">([[</span><span class="n">v1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v1</span><span class="p">[</span><span class="mi">2</span><span class="p">]],</span>
+                            <span class="p">[</span><span class="n">v2</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v2</span><span class="p">[</span><span class="mi">2</span><span class="p">]]])</span>
+    
+    <span class="n">j_comp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">([[</span><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v1</span><span class="p">[</span><span class="mi">2</span><span class="p">]],</span>
+                            <span class="p">[</span><span class="n">v2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v2</span><span class="p">[</span><span class="mi">2</span><span class="p">]]])</span>
+    
+    <span class="n">k_comp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">([[</span><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v1</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span>
+                            <span class="p">[</span><span class="n">v2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v2</span><span class="p">[</span><span class="mi">1</span><span class="p">]]])</span>
+    
+    <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">i_comp</span><span class="p">,</span> <span class="o">-</span><span class="n">j_comp</span><span class="p">,</span> <span class="n">k_comp</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1"># Contoh penggunaan</span>
+<span class="n">v1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="n">hasil</span> <span class="o">=</span> <span class="n">cross_product</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil perkalian silang:&quot;</span><span class="p">,</span> <span class="n">hasil</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil perkalian silang: [-3.  6. -3.]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="sifat-sifat-perkalian-silang">
 <h2>Sifat-sifat Perkalian Silang<a class="headerlink" href="#sifat-sifat-perkalian-silang" title="Link to this heading">#</a></h2>
@@ -633,9 +681,6 @@ b_1 &amp; b_2 &amp; b_3
 </section>
 </section>
 <hr class="docutils" />
-<section id="code-program-mencari-cross-product">
-<h2>Code Program Mencari Cross Product<a class="headerlink" href="#code-program-mencari-cross-product" title="Link to this heading">#</a></h2>
-</section>
 <section id="implementasi-pada-luas-jajaran-genjang">
 <h2>Implementasi Pada Luas Jajaran Genjang<a class="headerlink" href="#implementasi-pada-luas-jajaran-genjang" title="Link to this heading">#</a></h2>
 <section id="konsep-dasar">
@@ -909,12 +954,14 @@ V = |\vec{a} \cdot (\vec{b} \times \vec{c})|
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-cross-product">Definisi Cross Product</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-program-mencari-cross-product">Code Program Mencari Cross Product</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-determinan-untuk-menemukan-perkalian-silang">Menggunakan determinan untuk menemukan perkalian silang</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-cross-product-menggunakan-determinan">Rumus Cross Product menggunakan Determinan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-menghitung">Cara Menghitung:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh:</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-program-menggunakan-determinan-untuk-menemukan-perkalian-silang">Code program Menggunakan determinan untuk menemukan perkalian silang</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-perkalian-silang">Sifat-sifat Perkalian Silang</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#antikomutatif">1. Antikomutatif</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-vektor-tegak-lurus">2. Hasil Vektor Tegak Lurus</a></li>
@@ -925,7 +972,6 @@ V = |\vec{a} \cdot (\vec{b} \times \vec{c})|
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-product-vektor-dengan-dirinya-sendiri">7. Cross Product Vektor dengan Dirinya Sendiri</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-program-mencari-cross-product">Code Program Mencari Cross Product</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-pada-luas-jajaran-genjang">Implementasi Pada Luas Jajaran Genjang</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-dasar">Konsep Dasar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajar-genjang-besar-cross-product">Luas Jajar Genjang = Besar Cross Product</a></li>
