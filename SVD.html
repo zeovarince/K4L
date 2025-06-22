@@ -426,21 +426,18 @@ A = U \Sigma V^T
 \]</div>
 <blockquote>
 <div><p>Dimana:</p>
-</div></blockquote>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(U\)</span>: Matriks ortogonal berukuran <span class="math notranslate nohighlight">\(m \times m\)</span>, kolom-kolomnya disebut <strong>left singular vectors</strong></p></li>
 <li><p><span class="math notranslate nohighlight">\(\Sigma\)</span>: Matriks diagonal berukuran <span class="math notranslate nohighlight">\(m \times n\)</span>, elemen-elemennya adalah <strong>singular values</strong></p></li>
 <li><p><span class="math notranslate nohighlight">\(V^T\)</span>: Matriks ortogonal berukuran <span class="math notranslate nohighlight">\(n \times n\)</span>, baris-barisnya disebut <strong>right singular vectors</strong></p></li>
 </ul>
+</div></blockquote>
 </section>
 <section id="langkah-langkah-svd">
 <h2>Langkah-langkah SVD<a class="headerlink" href="#langkah-langkah-svd" title="Link to this heading">#</a></h2>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>Hitung <span class="math notranslate nohighlight">\(A^T\)</span> dan <span class="math notranslate nohighlight">\(A A^T\)</span></p></li>
-</ol>
-</div></blockquote>
-<ol class="arabic simple" start="2">
 <li><p>Cari nilai eigen dan singular value (<span class="math notranslate nohighlight">\(\sigma\)</span>) dari <span class="math notranslate nohighlight">\(A^T A\)</span><br />
 (catatan: singular value (<span class="math notranslate nohighlight">\(\sigma\)</span>) adalah akar dari nilai eigen <span class="math notranslate nohighlight">\(A^T A\)</span>)</p></li>
 <li><p>Hitung vektor singular kanan (<span class="math notranslate nohighlight">\(V\)</span>)</p></li>
@@ -448,6 +445,7 @@ A = U \Sigma V^T
 <li><p>Bangun matriks diagonal <span class="math notranslate nohighlight">\(\Sigma\)</span></p></li>
 <li><p>Verifikasi bahwa <span class="math notranslate nohighlight">\(A = U \Sigma V^T\)</span></p></li>
 </ol>
+</div></blockquote>
 </section>
 <section id="svd-pada-matriks-2d">
 <h2>SVD pada Matriks 2D<a class="headerlink" href="#svd-pada-matriks-2d" title="Link to this heading">#</a></h2>
